@@ -1,0 +1,38 @@
+.thr{
+    width: 1200px;
+    border:1px solid #ebebeb;
+    margin:15px 0;
+}
+.thr p{color:#000;}
+.thr p:hover{color:#f00;}
+.sprite1,.sprite2,.sprite3,.sprite4,.sprite5,.sprite6,.sprite7,.sprite8{
+    width: 48px;height: 48px;
+    background: url(../damai/image/sprite1.png) no-repeat;
+    background-size:50px 623px;
+}
+.thr div.sprite1{
+    background-position:0 0;
+}
+.thr div.sprite2{
+    background-position:6px -67px;
+}
+.thr div.sprite3{
+    background-position:355% 22%;
+}
+.thr div.sprite4{
+    background-position:-226% 33.2%;
+}
+.thr div.sprite5{
+    background-position:103% 86%;
+}
+.thr div.sprite6{
+    background-position:-224% 43%;
+}
+.thr div.sprite7{
+    background-position:-222% 64.5%;
+}
+.thr div.sprite8{
+    background-position:-226% 75.4%;
+}
+
+.thr a{margin-top:20px;}
