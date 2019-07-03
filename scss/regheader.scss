@@ -1,0 +1,42 @@
+/* 中部注册面 */
+.main{width: 100%;height: 583px;
+    background:#f8f8f8;
+    padding-top: 40px;
+}
+.bigreg{
+    width: 1200px;height:540px;
+    margin: 0 auto;
+    background:#fff;
+    padding-top:40px;
+    
+}
+.reg-bg{width: 1200px;height: 339px;}
+.reg-page{
+        width: 720px;height: 339px;
+        margin: 0 auto;
+        font-size:14px;
+}
+.around{width: 300px;height: 40px;}
+.s-around{width: 40px;height: 40px;}
+.d1{
+    display:flex;
+}
+.d1 p{margin: 0;}
+
+.password,.repassword{width:298px;height:38px;
+    margin: 0 0 16px;
+}
+.adress{width: 145px;height: 38px;}  
+.phone input{
+    width: 152px;height: 38px;
+    margin: 0 0 16px;        
+}
+// 注册内容栏
+.password{border-radius: 3px;}
+.repassword{border-radius: 3px;}
+.btn-danger{
+    width: 150px;height: 40px;
+    background-image: linear-gradient(90deg,#ff4aae,#ff1268);
+    padding: 0 20px;
+}
+
