@@ -24,12 +24,12 @@
   font-size: 14px; }
 
 .around {
-  width: 300px;
-  height: 40px; }
+  background: #9c9c9c; }
 
 .s-around {
-  width: 40px;
-  height: 40px; }
+  width: 300px;
+  height: 40px;
+  line-height: 40px; }
 
 .d1 {
   display: flex; }
@@ -46,8 +46,12 @@
   width: 145px;
   height: 38px; }
 
+.phone1 {
+  width: 145px;
+  height: 38px; }
+
 .phone input {
-  width: 152px;
+  width: 149px;
   height: 38px;
   margin: 0 0 16px; }
 
@@ -62,3 +66,7 @@
   height: 40px;
   background-image: linear-gradient(90deg, #ff4aae, #ff1268);
   padding: 0 20px; }
+
+.kong {
+  margin: 0 0 0 20px; 
+}

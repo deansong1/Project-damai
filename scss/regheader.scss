@@ -16,19 +16,25 @@
         margin: 0 auto;
         font-size:14px;
 }
-.around{width: 300px;height: 40px;}
-.s-around{width: 40px;height: 40px;}
+.around{ 
+    background:#9c9c9c;
+}
+.s-around{
+    width: 300px;height: 40px;
+    line-height: 40px;
+}
 .d1{
     display:flex;
+    margin-left: 30px;
 }
 .d1 p{margin: 0;}
 
 .password,.repassword{width:298px;height:38px;
     margin: 0 0 16px;
 }
-.adress{width: 145px;height: 38px;}  
-.phone input{
-    width: 152px;height: 38px;
+.adress{width: 145px;height: 38px;}
+.phone1{width: 145px;height: 38px;}  
+.phone input{width: 149px;height: 38px;
     margin: 0 0 16px;        
 }
 // 注册内容栏
@@ -39,4 +45,5 @@
     background-image: linear-gradient(90deg,#ff4aae,#ff1268);
     padding: 0 20px;
 }
+
 
