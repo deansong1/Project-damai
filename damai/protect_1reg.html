@@ -23,33 +23,36 @@
         }
     </style>
 </head>
-<body>
+<body onload="show">
     <header>
             <iframe class="reg-header" src="regheader.html" frameborder="0" scrolling="no"></iframe>
     </header>
     <div class="main">
         <div class="bigreg text-center"> 
         <div class="reg-bg">
-            <div class="reg-page mt-5 text-muted">
+            <div class="reg-page text-muted">
                 <div class="phone">
                     *手机号码：
                     <span><span><input class="phone1" type="text" value="中国大陆 +86"></span></span><input type="text" class="adress">
                 </div>
                 <div>
-                    *登陆密码：<input type="password" class="password" placeholder="设置你的登录密码">
+                    *登陆密码：<input type="password" class="password" placeholder="设置你的登录密码" onfocus="msg_upwd()" onblur="check_upwd()" id="upwd">
                 </div>
+                    <span id="msg1"></span>
                 <div>
-                    *密码确认：<input type="password" class="repassword" placeholder="请再次输入你的登录密码">
+                    *密码确认：<input type="password" class="password" placeholder="请再次输入你的登录密码" onblur="check_cpwd()" id="cpwd">
                 </div>
-                <div class="d-flex justify-content-center">
-                    <span class="mt-2">*滑动验证：</span>
-                    <span class="around">
-                        <div class="s-around">请按住滑块，拖动到最右边</div>
-                        </span>
+                    <span id="msg2"></span>
+                <div class="d-flex justify-content-center push">
+                        <span class="mt-2">*滑动验证码：</span>
+                        <span class="around position-relative">
+                            <div class="position"></div>
+                            <div class="s-around z-index">请按住滑块，拖动到最右边</div> 
+                        </span> 
                 </div>
                 <div class="d1 justify-content-center mt-4"> 
-                    <input type="checkbox" class="ml-5">
-                    <p>我已阅读并同意<a href="">《会员协议》</a>
+                    <input type="checkbox" class="cube mt-1 ml-5">
+                    <p class="ml-1">我已阅读并同意<a href="">《会员协议》</a>
                     和<a href="">《隐私权条款》</a></p>
                 </div>
                 <button class="btn btn-danger mt-3">同意并注册</button>
@@ -57,7 +60,30 @@
         </div>
     </div>
 </div>
-        
+       <script>
+           function msg_upwd(){
+                    msg1.innerHTML="用户名要6-20个字符，密码不能和会员名相同";
+           }
+           function check_upwd(){
+               var $upwd=upwd.value;
+               if ($upwd=="") {
+                    msg1.innerHTML="您输入的用户名为空";
+               } else if($upwd.length>=6 && $upwd.length<=20){
+                    msg1.innerHTML="格式正确";   
+               }else{
+                    msg1.innerHTML="格式错误";
+               }
+           }
+           function check_cpwd(){
+                var $upwd=upwd.value;
+                var $cpwd=cpwd.value;
+                if ($cpwd==$upwd) {
+                        msg2.innerHTML="密码不一致";
+                } else if($cpwd==$upwd){
+                        msg2.innerHTML="密码一致";
+                }
+           }
+       </script> 
     <footer>
         <iframe class="my-footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
     </footer>
