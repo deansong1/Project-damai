@@ -51,17 +51,11 @@
 .d1 p {
   margin: 0; }
 
-.d1 p a {
-  text-decoration: none; }
-
 .password, .repassword {
   width: 298px;
   height: 38px;
   margin: 0 0 16px;
   padding: 0 12px; }
-
-.password:hover, .repassword:hover {
-  border-color: #ff3000; }
 
 .push {
   margin-right: 15px; }
@@ -76,12 +70,9 @@
   padding: 0; }
 
 .phone input {
-  width: 148px;
+  width: 149px;
   height: 38px;
   margin: 0 0 16px; }
-
-.phone input:hover {
-  border-color: #ff3000; }
 
 .btn-danger {
   width: 150px;
