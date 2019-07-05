@@ -32,8 +32,9 @@
             <div class="reg-page text-muted">
                 <div class="phone">
                     *手机号码：
-                    <span><span><input class="phone1" type="text" value="中国大陆 +86"></span></span><input type="text" class="adress">
+                    <span><span><input class="phone1" type="text" value="中国大陆 +86"></span></span><input type="text" class="adress" onblur="check_phone()" id="telephone">
                 </div>
+                <span id="tel_msg" class=""></span>
                 <div>
                     *登陆密码：<input type="password" class="password" placeholder="设置你的登录密码" onfocus="msg_upwd()" onblur="check_upwd()" id="upwd">
                 </div>
@@ -60,8 +61,11 @@
     </div>
 </div>
        <script>
+           function check_phone() {
+                        tel_msg.innerHTML="格式错误";
+           }
            function msg_upwd(){
-                    msg1.innerHTML="用户名要6-20个字符，密码不能和会员名相同";
+                    msg1.innerHTML="6-20个字符，密码不能和会员名相同";
            }
            function check_upwd(){
                var $upwd=upwd.value;
