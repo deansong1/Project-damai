@@ -13,7 +13,7 @@
         /* 顶部 */
         .reg-header{width: 100%;height:90px;}
 
-        /*登陆栏 */
+        /*登录栏 */
        
         /* 底部 */
         .my-footer{ 
@@ -25,42 +25,97 @@
     <header>
             <iframe class="reg-header" src="regheader.html" frameborder="0" scrolling="no"></iframe>
     </header>
+<!-- 登录栏 -->
     <div class="main">
         <div class="bigreg text-center"> 
-        <div class="reg-bg">
+            <img src="logreg/logpic.png" alt="">
+    <!-- 选项卡栏 -->
             <div class="reg-page text-muted">
+                    <ul  class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a data-toggle="tab" class="nav-link active" href="#tab1">密码登录</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="tab" class="nav-link" href="#tab2">短信登录</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="tab" class="nav-link" href="#tab3">扫码登录</a>
+                            </li>
+                    </ul>
+        <!-- 密码登录栏内容 -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab1"> 
                 <div class="phone">
                    <input type="text" class="adress" placeholder="请输入手机号或邮箱">
                 </div>
-                <!-- <span id="tel_msg" class=""></span> -->
                 <div>
                     <input type="password" class="password" placeholder="请输入登录密码" onfocus="msg_upwd()" onblur="check_upwd()" id="upwd">
                 </div>
-                    <!-- <span id="msg1"></span> -->
-            
-                <button class="btn btn-danger mt-3">同意并注册</button>
+                <button class="btn btn-danger">
+                    登录
+                </button>
+            <div class="logo_link mt-3 ml-1">
+                <a href="">
+                    <div class="m1"></div>
+                    </a>   
+                <a href="">
+                    <div class="m2"></div>
+                    </a>   
+                <a href="">
+                    <div class="m3"></div>
+                    </a>   
+                <a href="">
+                    <div class="m4"></div>
+                    </a>   
             </div>
-        </div>
+                <div class="freereg">
+                    <a href="">忘记密码</a>
+                    <a href="">免费注册</a>
+                </div>
+            </div>    
+        <!-- 短信登录栏 -->
+                <div class="tab-pane" id="tab2"> 
+                    <div class="dropdown mb-3">
+                        <button class="dropdown-toggle" data-toggle="dropdown">
+                        +86   
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="">中国大陆 +86</a></li>
+                            <li><a href="">中国香港 +852</a></li>
+                            <li><a href="">中国台湾 +886</a></li>
+                            <li><a href="">中国澳门 +853</a></li>
+                        </ul>
+                       <input type="text" class="msg1" placeholder="请输入手机号">
+                    </div>
+                    <div>
+                        <input type="password" class="password1" placeholder="请输入验证码">
+                    </div>
+                    <button class="btn btn-danger">
+                        登录
+                    </button>
+                </div>  
+        <!-- 扫码登录 --> 
+                <div class="tab-pane" id="tab3"> 
+                    <div>
+                        <div class="text text-center">
+                           请升级至大麦最新版本
+                        </div>
+                    <div class="codepage">
+                        <div class="img1">
+                        <img class="xcode m-0" src="../damai/logReg/damaicode.png" alt="">
+                    </div>   
+                        <div class="mb-2">
+                            打开<a href="">大麦手机客户端</a>
+                            扫一扫登录
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+            </div>
+        </div>   
     </div>
 </div>
-       <!-- <script>
-           function check_phone() {
-                        tel_msg.innerHTML="格式错误";
-           }
-           function msg_upwd(){
-                    msg1.innerHTML="6-20个字符，密码不能和会员名相同";
-           }
-           function check_upwd(){
-               var $upwd=upwd.value;
-               if ($upwd=="") {
-                    msg1.innerHTML="您输入的用户名为空";
-               } else if($upwd.length>=6 && $upwd.length<=20){
-                    msg1.innerHTML="格式正确";   
-               }else{
-                    msg1.innerHTML="格式错误";
-               }
-           }
-       </script>  -->
+      
     <footer>
         <iframe class="my-footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
     </footer>
