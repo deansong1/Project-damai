@@ -23,9 +23,15 @@
     font-size: 14px;
     background:#fff; }
 
-    .nav{background:#e7e7e7;
+.nav{background:#e7e7e7;
     width:100%;}
-    .nav-item a{font-size:16px;color:#000;}
+.nav-item a{font-size:16px;color:#000;}
+.nav-item a:hover{color:#f00;}
+.nav-item:hover{
+    border-top:2px solid #f00;
+    
+}
+
 /* 密码登录栏 */
 #tab1,#tab2{
     width:300px;height: 195px;
@@ -48,7 +54,6 @@
 .password:focus{
     border: 1px solid #ff3000;
     outline: none; }
-
 
 .phone input {
     width: 300px;
@@ -93,7 +98,7 @@ div.m4{background-position:3% 13%;}
 input.msg1{
     width: 300px;
     height: 42px;
-    background:url(../damai/logReg/123.png) no-repeat;
+    background:url(../damai/logReg/cellphone.png) no-repeat;
     padding-left: 45px;
 }
 
@@ -101,7 +106,7 @@ input.password1{
     width: 300px;
     height: 42px;
     margin: 0 0 16px;
-    background:url(../damai/logReg/cellphone.png) no-repeat; padding-left: 45px;
+    background:url(../damai/logReg/123.png) no-repeat; padding-left: 45px;
 }
 
 .msg1:focus,.password1:focus{
@@ -124,11 +129,19 @@ input.password1{
 }
 
 .codepage div{
-    font-size:12px;
-    
+    font-size:12px;  
 }
 .img1{
     margin:0 auto;
 }
- 
+.codescan{
+    margin:0 !important;
+    padding-left:100px; 
+}
+.bottom1>div
+{
+/* width:130px; */
+height: 34px;
+padding-right:20px;
+text-align: center;}
   

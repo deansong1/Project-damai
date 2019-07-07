@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>大麦网</title>
+    <!-- 引入4个文件，必须注意导入顺序-->
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/navi-list.css"/>
+    <link rel="stylesheet" href="../css/detail.css"/>
+
+    <style>
+        /* 顶部 */
+        *{margin:0;padding:0;}
+        .main{width:1200px;margin:0 auto;}
+        .main a:hover{text-decoration: none;}
+        .a1{width:1200px;height:72px;}
+        .a1 a{color:#000;}
+        .a1 img{cursor: pointer;}
+        .b1{width:92px;height: 42px;}
+        .a1 input{  border-top-left-radius: 46px;
+                    border-bottom-left-radius: 46px;
+        }
+        .location{
+            width: 12px;height:14px;
+            margin-right:5px;
+            margin-bottom: 3px;
+        }
+        .angle{width: 9px;height: 5.4px;}
+        .search{width:319px;height: 46px;
+                background:#f8f8f8 url(image/sear.png) no-repeat 5% 50%;
+                background-size:17px 18px;
+                padding-left:50px;
+                border: 1px solid #fff;
+                outline:none;
+                position: relative;
+                border-top-left-radius: 46px;
+                border-bottom-left-radius: 46px;      
+        }
+        .search:focus{
+            border: 1px solid #f00;
+        }
+        .click1{
+                    width: 82px;height: 46px;
+                    line-height:46px;
+                    background:#ff1268;
+                    cursor:pointer;
+                    position: absolute;
+                    top:0;
+                    left:319px;
+                    border-radius: 0 27px 27px 0;
+        }
+        .click1 p{
+            color:#fff;
+            text-align: center;
+        }
+
+        .imgs{float: left;list-style:none;}
+        .imgs img{width:26px;height: 26px;  }
+        .c1{color:#000;}
+        .c1:hover{color: #f00;}
+        .ht{padding-right:-15px;padding-left:110px;}
+
+    /* 详情内容页 */
+
+    
+    /* 底部 */
+        .my-footer{ width:100%;height:340px;}
+    </style>
+</head>
+<body>
+<!-- 顶部 -->
+<div class="main">
+    <div class="row a1 mt-3 ml-1">
+        <a class="col-1">
+            <img class="b1" src="image/toplogo.png" alt=""/>
+        </a>
+        <div class="col-1 ml-5 mt-2">
+            <img src="image/location.png" class="location"/><a href="">全国</a>
+            <img src="image/angle.png" class="angle"/>
+        </div>
+        <div  class="col-1 mt-2 pr-2" >
+            <a  href="">首页</a>
+            <a href="" class="ml-2">分类</a>
+        </div>
+        <div class="col-4 ml-5 p-0">
+            <input type="text" class="search" placeholder="搜索明星、演出和体育赛事"/>
+            <div class="click1"><p>搜索</p></div>
+        </div>
+        <div class="col-4 p-0">
+        <ul class="ht mt-2 ml-4">
+            <li class="imgs ml-3">
+                <img src="image/login_icon.png" alt=""/>
+                <a class="c1" href="">登录</a>
+            </li>
+            <li class="imgs ml-3">
+                <img src="image/download_icon.png" alt=""/>
+                <a class="c1" href="">下载</a>
+            </li>
+            <li class="imgs ml-3">
+                <img src="image/english.png" alt=""/>
+                <a class="c1" href="">English</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+<!-- 详情内容页-->
+<div class="detail_index">
+    
+    <div class="detail_left">
+        <div><img src="detail_img/cheng.png" alt=""></div>
+        <div class="detail_text">
+            <h5>【杭州】陈绮贞20周年演唱会【漫漫长夜cheer20】- 杭州站</h5>
+            <h6 class="text-muted">时间：2019.12.14 周六 19:30</h6>
+            <p class="text-muted">场馆：杭州 | 黄龙体育中心(体育馆) </p>
+            <div class="sold d-flex">
+                <span class="so">预售</span>
+                <span class="ml-2 mr-2">|</span>
+                <div class="sell_detail">
+                    <div>本商品为预售商品，正式开票后将在第一时间为您配送</div>
+                    <div class="text-muted">
+                        预售期间，由于主办未正式开票，下单后无法立即配送票品。一般演出前2-6周出票，待正式开票后将在第一时间为您配送，请耐心等待。纸质票购票后可在订单详情页查看物流信息
+                    </div>          
+                </div>
+            </div>
+
+            <p class="p1">场次时间均为演出当地时间</p>
+
+            <div class="time d-flex">
+                <div>场次</div>
+                <div class="teller ml-3">
+                    <span>预告</span>      
+                    <span class="sp2">2019-12-14 周六 19:30</span>      
+                </div>
+            </div>
+                
+                <div class="d-flex">
+                    <div>票档</div>
+                    <div class="price d-flex text-center">
+                        <div>399(看台)</div>
+                        <div>499(看台)</div>
+                        <div>699(看台)</div>
+                        <div>799(内场)</div>
+                        <div>1199(内场)</div>
+                    </div>
+                </div>
+                    <div class="d-flex">
+                        <div>数量</div>
+                        <div class="count text-muted">每笔订单限购6张</div>
+                    </div>
+                    <p id="explain">按付款顺序配票，优先连座配票</p>
+                    <div class="d-flex ">
+                        <div>合计</div>
+                        <div class="Sum mt-2">
+                            <span class="price1">￥699</span>
+                            <span class="text-muted">登录后查看是否享受优惠</span>
+                        </div>
+                    </div>
+                    <div class="btn">立即预定</div>
+                </div>
+            </div>
+            <div class="detail_right"></div>
+       
+</div>
+
+
+<!-- 底部 -->
+<footer>
+    <iframe class="my-footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
+</footer>
+</body>
+</html>
