@@ -43,10 +43,11 @@ span.sp2{line-height:43px;}
 height: 43px;
 color:#ff1268;
 background: #ffeaf1;
-outline-color:#ffeaf1;}
+outline-color:#ffeaf1;
+cursor:pointer;}
 .teller span{font-size:12px;}
 .teller span：{font-size:12px;}
-
+.sp1{float:left;}
 
 .price{width:473px;
 height:162px;
@@ -68,11 +69,26 @@ p#explain{
     .price1{color:#ff1268;
     font:21px 微软雅黑;}
 .count,.Sum{
-    margin: 0 0 0 15px;
+    margin-bottom:10px;
     font-size: 12px;
 }
-
-
+.tickets{margin-top:28px;}
+.Count{margin-top:33px;}
+.sum1{margin-top:33px;}
+.floatZone{
+    width: 82px;height: 143px;
+    border:1px solid #ebebeb;
+    position:fixed;
+    right: 10px;
+    top: 72.5%;
+    margin-top: -105px;
+    background: #fff;
+    }
+    .floatZone div{
+        width:80px;height: 71px;
+        border:1px solid #ebebeb;
+        
+    }
 
 
 
