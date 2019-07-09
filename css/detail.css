@@ -3,18 +3,21 @@
     height: 5814.5px;
     border:1px solid #ebebeb;
     margin: 0 0 64px;
+   
 }
+.detail_all{width: 880px;height:100%;float: left;}
 .detail_index img{width: 270px;
     height: 360px;
 margin:0 0 0 20px;}
 
-.detail_left{width: 880px;
-    height: 878.5px;
-    display:flex;
-    padding: 40px 0 60px;
-    border-bottom:1px solid #ebebeb;
-    border-left:1px solid #ebebeb;
-    border-right:1px solid #ebebeb;
+.detail_left{
+    width: 880px;
+            height: 878.5px;
+            display:flex;
+            padding: 40px 0 60px;
+            border-bottom:1px solid #ebebeb;
+            border-left:1px solid #ebebeb;
+            border-right:1px solid #ebebeb;
 }
 
 .detail_text{width:550px;
@@ -99,6 +102,7 @@ p#explain{
     position:fixed;
     right: 10px;
     top: 72.5%;
+
     margin-top: -105px;
     background: #fff;
     }
@@ -121,3 +125,69 @@ p#explain{
     background:#ff2d79;
     margin: 30px 0 0 85px;
 }
+
+.notice_nav{
+    border:1px solid #ebebeb;
+    width:880px;height: 56px;
+    line-height:56px;
+    padding:0 0 0 30px;
+    
+}
+.notice_nav span{margin:0 60px 0 0;}
+.notice_content{
+    width: 880px;height: 4878px;
+    border:1px solid #ebebeb;
+    padding: 60px 30px 0;
+}
+/* 右边内容页 */
+.detail_right{
+    width: 320px;height:5814.5px;
+    padding: 40px 18px 0;
+    float: left;
+}
+.serves{ 
+    width: 283px;height:410px; 
+    border:1px solid #ebebeb;
+    padding: 24px 15px;
+}
+.seat{font:14px 微软雅黑;}
+.view{
+    font:12px 微软雅黑;
+    color:#999999;
+    margin:6px 0 0;
+}
+.serves1{margin:0 0 18px;}
+#scancode{width: 251px;height: 91px;}
+#scancode img{width: 90px;height: 90px;float: left;}
+.code_tell{width: 160px;height: 90px;
+border:1px solid #ebebeb;float: left;
+}
+.code_tell span{
+    font:12px 微软雅黑;
+    color:#999;}
+.pls_center{
+            text-align:center;
+            margin-top:20px;}
+
+.right_list{
+    margin:60px 0 0;}
+h5{margin:0 0 24px;}
+.list1{margin:0 0 30px;}
+.list1 img{
+    width: 120px;height: 160px;
+    margin:0;
+}
+.list1 div{font-size: 12px;color:#9b9b9b;}
+div.min_price{
+    font-size: 16px;
+    color:#ff1268;
+    margin-top:65px;
+}
+.lost{font-size: 14px;color: #4a4a4a;}
+
+/* 演出介绍部分 */
+.title1{padding-bottom: 14px;
+    margin-bottom: 23px;
+    font-size: 20px;
+    color: #000;
+    border-bottom: 1px solid #e2e2e2;}
