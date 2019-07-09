@@ -11,10 +11,10 @@ margin:0 0 0 20px;}
 .detail_left{width: 880px;
     height: 878.5px;
     display:flex;
-padding: 40px 0 60px;
-border-bottom:1px solid #ebebeb;
-border-left:1px solid #ebebeb;
-border-right:1px solid #ebebeb;
+    padding: 40px 0 60px;
+    border-bottom:1px solid #ebebeb;
+    border-left:1px solid #ebebeb;
+    border-right:1px solid #ebebeb;
 }
 
 .detail_text{width:550px;
@@ -33,6 +33,9 @@ h5{
 }
 .sold span{color:#ff1268;}
 span.so{width: 24px;height: 68px;}
+span.sp1{
+    background: #ff2d79;
+}
 span.sp2{line-height:43px;}
 
 .p1{
@@ -46,7 +49,7 @@ background: #ffeaf1;
 outline-color:#ffeaf1;
 cursor:pointer;}
 .teller span{font-size:12px;}
-.teller span：{font-size:12px;}
+.teller span{font-size:12px;}
 .sp1{float:left;}
 
 .price{width:473px;
@@ -55,26 +58,41 @@ flex-wrap: wrap;
 margin: 0 0 0 15px;
 }
 
-.price div{
+
+.price a{
     width:131px;height:75px;
     border:1px solid #ebebeb;
+    color:#000;
     margin:0 6px 0 0;
     font-size: 12px;
     line-height:75px;
+    cursor:pointer;
 }
+.price a:focus{
+    background:#ffeaf1;
+    color:#ff1268;
+}
+
+
 p#explain{
     font-size:12px;
     margin:0 0 0 47px;
-    color: #6c757d}
-    .price1{color:#ff1268;
+    color: #6c757d;}
+.price1{color:#ff1268;
     font:21px 微软雅黑;}
 .count,.Sum{
     margin-bottom:10px;
     font-size: 12px;
 }
+.Sum{margin-left:15px;}
+
 .tickets{margin-top:28px;}
 .Count{margin-top:33px;}
+.count{height: 40px;
+    margin:0 0 0 15px;}
+
 .sum1{margin-top:33px;}
+
 .floatZone{
     width: 82px;height: 143px;
     border:1px solid #ebebeb;
@@ -84,18 +102,19 @@ p#explain{
     margin-top: -105px;
     background: #fff;
     }
-    .floatZone div{
+.floatZone div{
         width:80px;height: 71px;
         border:1px solid #ebebeb;
         
     }
-
-
-
-
-
-
-
+.one{
+    width: 118px;height: 40px;
+    border:1px solid #ebebeb;
+    align-items: center;
+}
+.text-dark{width: 28px;height: 28px;}
+.my_input{width:10%;outline:0;border:0;}
+.limit{line-height: 40px;margin-left:8px; }
 
 .btn{
     width:210px;height: 40px;
