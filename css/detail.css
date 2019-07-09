@@ -134,11 +134,7 @@ p#explain{
     
 }
 .notice_nav span{margin:0 60px 0 0;}
-.notice_content{
-    width: 880px;height: 4878px;
-    border:1px solid #ebebeb;
-    padding: 60px 30px 0;
-}
+
 /* 右边内容页 */
 .detail_right{
     width: 320px;height:5814.5px;
@@ -149,6 +145,7 @@ p#explain{
     width: 283px;height:410px; 
     border:1px solid #ebebeb;
     padding: 24px 15px;
+    background: #fafafa;
 }
 .seat{font:14px 微软雅黑;}
 .view{
@@ -157,7 +154,7 @@ p#explain{
     margin:6px 0 0;
 }
 .serves1{margin:0 0 18px;}
-#scancode{width: 251px;height: 91px;}
+#scancode{width: 251px;height: 91px;background: #fff;}
 #scancode img{width: 90px;height: 90px;float: left;}
 .code_tell{width: 160px;height: 90px;
 border:1px solid #ebebeb;float: left;
@@ -167,7 +164,8 @@ border:1px solid #ebebeb;float: left;
     color:#999;}
 .pls_center{
             text-align:center;
-            margin-top:20px;}
+            margin-top:20px;
+        }
 
 .right_list{
     margin:60px 0 0;}
@@ -186,6 +184,20 @@ div.min_price{
 .lost{font-size: 14px;color: #4a4a4a;}
 
 /* 演出介绍部分 */
+.notice_content{
+    width: 880px;height: 4878px;
+    border:1px solid #ebebeb;
+    padding: 60px 30px 0;
+}
+.notice_content img{
+    width:600px;height: 460px;
+    margin:0;
+    padding:30px 0;
+}
+h3{
+    font-size:18.72px;
+    font-weight: bold;
+}
 .title1{padding-bottom: 14px;
     margin-bottom: 23px;
     font-size: 20px;

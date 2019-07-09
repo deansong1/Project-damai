@@ -15,9 +15,13 @@
     <style>
         /* 顶部 */
         *{margin:0;padding:0;}
-        .main{width:1200px;margin:0 auto;}
+
+        .main{
+            width:1200px;margin:0 auto;  
+        }
+        .r1{width:100%;border-bottom:1px solid #ebebeb;}
         .main a:hover{text-decoration: none;}
-        .a1{width:1200px;height:72px;}
+        .a1{width:1200px;height:60px;margin: 0 auto;}
         .a1 a{color:#000;}
         .a1 img{cursor: pointer;}
         .b1{width:92px;height: 42px;}
@@ -72,8 +76,8 @@
 </head>
 <body>
 <!-- 顶部 -->
-<div class="main">
-    <div class="row a1 mt-3 ml-1">
+<div class="r1">
+    <div class="row a1 mt-4">
         <a class="col-1">
             <img class="b1" src="image/toplogo.png" alt=""/>
         </a>
@@ -106,7 +110,8 @@
         </ul>
         </div>
     </div>
-
+</div>
+<div class="main">
 <!-- 详情内容页-->
 <div class="detail_index">
     <div class="detail_all">
@@ -170,13 +175,13 @@
                 </div>
             </div>
             <div class="notice_nav">
-                <span>项目详情</span>
-                <span>购票须知</span>
-                <span>观影需知</span>
+                <span><a href="#protect">项目详情</a></span>
+                <span><a href="#noticed">购票须知</a></span>
+                <span><a href="#watch">观影需知</a></span>
             </div>
 <!-- 演出介绍内容 -->
             <div class="notice_content">
-                <div class="title1">演出介绍</div>
+                <div class="title1" id="protect">演出介绍</div>
                 <p>购票须知</p>
                 <p>1、避免影响抢票体验，请您升级到大麦App最新版本购票。</p>
                 <p>2、请您提前在大麦App后台添加完整个人的购票信息，包括身份证、电话、地址，以方便购票。</p>
@@ -192,27 +197,27 @@
                 <p>很多人第一次知道她</p>
                 <p>都源于《旅行的意义》</p>
                 <p>不紧不慢的吉他弹唱</p>
-                <img src="" alt="">
+                <img src="detail_img/1.png" alt="">
                 <p>她是歌手，也是诗人、作家</p>
                 <p>更是生活的探险家</p>
                 <p>她的每首歌里都有着一个故事</p>
                 <p>很多人说，听她唱歌隔着一把吉他的距离</p>
                 <p>最后听到了自己</p>
                 <p>她就是陈绮贞</p>
-                <img src="" alt="">
+                <img src="detail_img/2.png" alt="">
                 <p>她既是公认的创作才女，</p>
                 <p>也是概念演唱会的先驱；</p>
                 <p>她为歌坛呈现了一场又一场独特又纯粹的精彩之作。</p>
-                <img src="" alt="">
+                <img src="detail_img/3.png" alt="">
                 <p>从2005年「花的姿态三部曲」，</p>
                 <p>到2007年「A PIECE OF SUMMER」巡回演唱会；</p>
                 <p>再有2009年「太阳」巡回演唱会；</p>
                 <p>还有2016年「房间里的音乐会」巡回演唱会...</p>
-                <img src="" alt="">
+                <img src="detail_img/4.png" alt="">
                 <p>本次巡回演唱会的主题是「漫漫长夜 Cheer 20」。陈绮贞曾表示：“《漫漫长夜》是我第一张专辑的歌，我的创作大部分都在夜晚，而这次《漫漫长夜》演唱会的晚上，是浓缩了20年的每一个夜晚，要呈现给你们。”</p>
                 <p>2019 她带着「漫漫长夜」再次来到杭州，邀请你一起来现场，在每一个漫漫长夜里，建构充满感动与泪水的回忆。</p> 
-                <img src="" alt=""> 
-                <div class="title1">购票须知</div>
+                <img src="detail_img/5.png" alt=""> 
+                <div class="title1" id="noticed">购票须知</div>
                 <p>限购说明</p>
                 <p>每个账号最多购买6张</p>
                 <p>实名制</p>
@@ -229,7 +234,21 @@
                 <p>演出时长约120分钟（以现场为准）</p>
                 <p>异常订购说明</p>
                 <p>对于异常订购行为，大麦网有权在订单成立或者生效之后取消相应订单。异常订购行为包括但不限于以下情形： （1）通过同一ID订购超出限购张数的订单； （2）经合理判断认为非真实消费者的下单行为，包括但不限于通过批量相同或虚构的支付账号、收货地址（包括下单时填写及最终实际收货地址）、收件人、电话号码订购超出限购张数的订单</p>
-                <div class="title1">观演需知</div>
+                <div class="title1" id="watch">观演需知</div>
+                <p class="item_title">入场时间</p>
+                <p class="item_title">演出前约90分钟</p>
+                <p class="item_title">禁止携带物品</p>
+                <p class="item_title">由于安保和版权的原因，大多数演出、展览及比赛场所禁止携带食品、饮料、专业摄录设备、打火机等物品，请您注意现场工作人员和广播的提示，予以配合</p>
+                <p class="item_title">寄存说明</p>
+                <p class="item_title">无寄存处，请自行保管携带物品</p>
+                <p class="item_title">主要演员（团体）</p>
+                <p class="item_title">陈绮贞</p>
+                <p class="item_title">最低演出时长</p>
+                <p class="item_title">约120分钟</p>
+                <p class="item_title">最低演出曲目数</p>
+                <p class="item_title">约20首</p>
+                <p class="item_title">大麦网首次开售时全场可售门票总张数</p>
+                <p class="item_title">4000</p>
 
             </div>
 </div>
@@ -314,7 +333,7 @@
                 </div>
             </div>      
 </div>
-
+</div>
 
 <div class="floatZone">
     <div id="item1">1</div>
