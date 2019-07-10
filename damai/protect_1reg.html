@@ -80,7 +80,7 @@
            function check_cpwd(){
                 var $upwd=upwd.value;
                 var $cpwd=cpwd.value;
-                if ($cpwd==$upwd) {
+                if ($cpwd!=$upwd) {
                         msg2.innerHTML="密码不一致";
                 } else if($cpwd==$upwd){
                         msg2.innerHTML="密码一致";

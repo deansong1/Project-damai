@@ -2,5 +2,104 @@
     width: 1200px;height: 1292px;
     margin:0 auto;
     border:1px solid #ebebeb;
-}  
-.buy_header{width: 1200px;height: 96px;} 
+} 
+.express{
+    width:1000px;height: 314px;
+    margin:0 auto;
+    border-bottom:1px solid #ebebeb; 
+}
+p.way{font-size:18px;margin-bottom:30px;}
+.buy{width: 1200px;height: 96px;
+margin:10px 0 5px;} 
+.buy_header{
+    width: 1000px;height: 96px;
+    background: url(../damai/paypage/paylist.png) no-repeat;
+    background-size: 1000px;
+    margin:0 auto;
+} 
+.car11{margin:0 0 16px;}
+.deliver{width: 80px;font-size:14px;text-align: center;}
+.express_icon{
+    width:1000px;height:145px;
+    border-bottom:1px solid #ebebeb;
+    margin:0 0 20px;
+    padding-bottom: 28px;}
+.exp-info{padding: 11px 34px;
+    color: #666;
+    line-height: 16px;
+    font-size: 12px;
+    border: 1px solid #f1f1f1;
+    position: relative;
+    margin-bottom: 14px;
+    background: #fcfcfc;}
+.audience{
+    width: 82px;height: 24px;
+    font-size:12px;
+    border:1px solid #C4C6CF;
+    background: #F7F8FA;
+    line-height:22px;
+    padding:0 10px;
+    border-radius: 4px;
+}
+.watcher{ width: 1000px;height: 153px; margin:0 auto;
+    border-bottom: 1px solid #ebebeb;
+    padding: 0 0 20px;
+}
+.wat-title{color: #333;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top:30px;
+    margin-bottom: 30px;}
+.paypal{    color: #333;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top:30px;
+    margin-bottom: 30px;}
+    .paypal-img{
+        width:241px;height: 76px;
+        border: 2px solid #ff1268;
+        text-align: center;
+        padding:20px 0;
+        cursor:pointer;
+}
+
+/* 右部小浮窗 */
+.floatZone{
+    width: 82px;height: 143px;
+    border:1px solid #ebebeb;
+    position:fixed;
+    right: 10px;
+    top: 72.5%;
+
+    margin-top: -105px;
+    background: #fff;
+    }
+.floatZone p{
+    font-size:12px;         
+    margin:5px 0 0;
+    text-align: center;
+}
+.floatZone p:hover{
+    color:#ff1268;
+}
+.item1,.item2,.item3{
+        width:80px;height: 71px;
+        border:1px solid #ebebeb; 
+        cursor:pointer;   
+    }
+.item1 div,.item2 div,.item3 div{
+    width: 32px;height: 29px;
+    margin: 0 24px;
+}
+.item1 div.sound{
+    background:url(../damai/image/tb1u1u9xmzqk1rjszfhxxb3cpxa-64-180.png) no-repeat -87% 43%;
+    background-size: 35px 101px;
+}
+.item2 div.sound1{
+    background:url(../damai/image/tb1u1u9xmzqk1rjszfhxxb3cpxa-64-180.png) no-repeat -87% -2%;
+    background-size: 32px 101px;
+}
+.item3 div.sound2{
+    background:url(../damai/image/tb1u1u9xmzqk1rjszfhxxb3cpxa-64-180.png) no-repeat -67% 101%;
+    background-size: 35px 101px;
+}

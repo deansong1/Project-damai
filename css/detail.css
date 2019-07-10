@@ -3,13 +3,14 @@
     width: 1202px;
     height: 5814.5px;
     border:1px solid #ebebeb;
-    margin: 0 0 64px;
-   
+    margin: 0 0 64px;  
 }
 .detail_all{width: 880px;height:100%;float: left;}
-.detail_index img{width: 270px;
+.detail_index img{
+    width: 270px;
     height: 360px;
-margin:0 0 0 20px;}
+    margin:0 0 0 20px;
+}
 
 .detail_left{
     width: 880px;
