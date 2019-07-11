@@ -2,15 +2,18 @@
     width: 1200px;height: 1292px;
     margin:0 auto;
     border:1px solid #ebebeb;
-} 
+}
+.main1{width: 1000px;margin:0 auto;} 
 .express{
     width:1000px;height: 314px;
     margin:0 auto;
     border-bottom:1px solid #ebebeb; 
 }
 p.way{font-size:18px;margin-bottom:30px;}
-.buy{width: 1200px;height: 96px;
-margin:10px 0 5px;} 
+.buy{
+    width: 1000px;height: 96px;
+    margin:10px 0 5px;
+} 
 .buy_header{
     width: 1000px;height: 96px;
     background: url(../damai/paypage/paylist.png) no-repeat;
@@ -63,6 +66,34 @@ margin:10px 0 5px;}
         cursor:pointer;
 }
 
+/* 确认订单信息栏 */
+.sure-list{
+    width:1000px;height: 264px;
+    margin: 30px 0 0;}
+.makesure{font-size: 18px;margin: 0 0 30px;}
+.sold_add{width:1000px;font-size:12px;}
+.p1{
+    width: 400px;height: 40px;
+}
+.p2{width: 170px;}
+.p3{width: 90px;}
+.p4{width: 90px;}
+.p5{width: 100px;}
+.p6{width: 150px;}
+.p1,.p2,.p3,.p4,.p5,.p6{
+    padding: 12px 16px;height: 40px;
+    background: #ebecf0;
+}
+.wallpaper{width: 400px;height:124px;padding: 22px 26px;}
+.nosit{width: 170px;height: 60px;
+line-height:60px;}
+
+
+.bot1{width:400px;}
+.bot2{width:599px;}
+.bot1,.bot2{height:46px;padding: 16px;background: #f7f7f7;}
+.d-flex img{width:62px;height:80px;}
+
 /* 右部小浮窗 */
 .floatZone{
     width: 82px;height: 143px;
@@ -91,6 +122,8 @@ margin:10px 0 5px;}
     width: 32px;height: 29px;
     margin: 0 24px;
 }
+.item3 p{color:#111;background: #fff;}
+
 .item1 div.sound{
     background:url(../damai/image/tb1u1u9xmzqk1rjszfhxxb3cpxa-64-180.png) no-repeat -87% 43%;
     background-size: 35px 101px;
@@ -103,3 +136,4 @@ margin:10px 0 5px;}
     background:url(../damai/image/tb1u1u9xmzqk1rjszfhxxb3cpxa-64-180.png) no-repeat -67% 101%;
     background-size: 35px 101px;
 }
+

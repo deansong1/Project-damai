@@ -124,6 +124,7 @@ p#explain{
     width: 32px;height: 29px;
     margin: 0 24px;
 }
+.item3 p{color:#111;background: #fff;}
 .item1 div.sound{
     background:url(../damai/image/tb1u1u9xmzqk1rjszfhxxb3cpxa-64-180.png) no-repeat -87% 43%;
     background-size: 35px 101px;
