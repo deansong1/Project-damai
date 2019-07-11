@@ -43,6 +43,7 @@ p.way{font-size:18px;margin-bottom:30px;}
     line-height:22px;
     padding:0 10px;
     border-radius: 4px;
+    cursor:pointer;
 }
 .watcher{ width: 1000px;height: 153px; margin:0 auto;
     border-bottom: 1px solid #ebebeb;
@@ -84,7 +85,8 @@ p.way{font-size:18px;margin-bottom:30px;}
     padding: 12px 16px;height: 40px;
     background: #ebecf0;
 }
-.wallpaper{width: 400px;height:124px;padding: 22px 26px;}
+.wallpaper{width:400px;height:124px;padding: 22px 26px;}
+.ifm{color:#9b9b9b;margin: 0 0 2px;}
 .nosit{width: 170px;height: 60px;
 line-height:60px;}
 
@@ -94,6 +96,7 @@ line-height:60px;}
 .bot1,.bot2{height:46px;padding: 16px;background: #f7f7f7;}
 .d-flex img{width:62px;height:80px;}
 
+.sign{text-align:right;}
 /* 右部小浮窗 */
 .floatZone{
     width: 82px;height: 143px;

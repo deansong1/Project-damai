@@ -125,12 +125,58 @@
              <div class="deliver">快递</div>
          </div>
          <div class="exp-info">暂无收货人信息，请点击“使用新地址”添加配送信息</div>
-         <div class="audience">使用新地址</div>
+         <button  data-toggle="modal" data-target="#mymodal" class="audience">使用新地址</button>
+         <div id="mymodal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>新增配送地址</h4>
+                        <button data-dismiss="modal" class="close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <span>所在地区：</span>
+                        <input  class="mb-2" type="text"/><br>
+                        <span>详细地址：</span>
+                        <input  class="mb-2" type="text"/><br>
+                        <span>收货人：</span>
+                        <input  class="mb-2" type="text"/><br>
+                        <span>手机号码：</span>
+                        <input  class="mb-2" type="text"/>
+                    </div>
+                    <div class="modal-body">
+                            <button>保存配送地址</button>     
+                        </div>
+                </div>
+            </div>
+        </div>
     </div>
+
     <div class="watcher">
         <div class="wat-title">观演人</div>
         <div class="exp-info">当前暂无常用观演人信息，请点击新增观演人按钮，添加常用观演人。</div>
-        <div class="audience">新增观演人</div>
+        <button  data-toggle="modal" data-target="#mymodal1" class="audience">新增观演人</button>
+        <div id="mymodal1" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>添加常用观演人</h4>
+                        <button data-dismiss="modal" class="close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <span>观演人姓名：</span>
+                        <input  class="mb-2" type="text"/><br>
+                        <span>证件类型：</span>
+                        <input  class="mb-2" type="text"/><br>
+                        <span>证件号码：</span>
+                        <input  class="mb-2" type="text"/><br>
+                    </div>
+                    <div class="modal-body">
+                        <button>保存</button>
+                        <button>取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="watcher">
         <div class="paypal">支付宝</div>
@@ -149,27 +195,27 @@
                    <td><div class="p5">优惠</div></td>
                    <td><div class="p6">小计</div></td>
                </tr>
-               <tr class="text-center">
-                   <td class="d-flex">
+               <tr>
+                   <td>
                        <div class="wallpaper d-flex">
                    <div>
                        <img src="paypage/cheng-img.jpg" alt="">
                     </div>     
-                        <div>
-                            <div>陈绮贞20周年演唱会【漫漫长夜cheer20】- 杭州站</div>        
-                            <div>2019.12.14 19:30-22:00</div>        
-                            <div>黄龙体育中心(体育馆)</div>    
-                            <div>按付款顺序配票，优先连座配票</div>
+                        <div class="ml-3">
+                            <div class="mb-1">陈绮贞20周年演唱会【漫漫长夜cheer20】- 杭州站</div>        
+                            <div class="ifm">2019.12.14 19:30-22:00</div>        
+                            <div class="ifm">黄龙体育中心(体育馆)</div>    
+                            <div class="ifm">按付款顺序配票，优先连座配票</div>
                         </div> 
                     </div>   
                     </td>
                    <td>
-                       <div class="nosit">暂无座位信息</div>
+                       <div class="nosit text-center">暂无座位信息</div>
                     </td>
-                   <td>699.00</td>
-                   <td>1</td>
-                   <td>-</td>
-                   <td>699.00</td>
+                   <td class=" text-center">699.00</td>
+                   <td class=" text-center">1</td>
+                   <td class=" text-center">-</td>
+                   <td class=" text-center">699.00</td>
                </tr>
                <tr>
                    <td><div class="bot1">开具发票：请在支付完成后，前往大麦APP开具发票</div></td>
@@ -181,10 +227,11 @@
            </table> 
 
         </div>
-          <div>我已经阅读并同意《大麦网订票服务条款》</div>     
+        <div class="sign">
+          <div class="">我已经阅读并同意《大麦网订票服务条款》</div>     
           <div>同意"票品为不记名凭证，请您妥善保管，遗失不补"</div>     
           <div>实付款：￥699.00</div> 
-          <button>同意以上协议并提交订单</button>    
+          <button>同意以上协议并提交订单</button> </div>   
     </div>
 </div>
 </div>
