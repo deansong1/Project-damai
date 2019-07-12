@@ -134,16 +134,33 @@
                         <button data-dismiss="modal" class="close">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <span>所在地区：</span>
-                        <input  class="mb-2" type="text"/><br>
-                        <span>详细地址：</span>
-                        <input  class="mb-2" type="text"/><br>
-                        <span>收货人：</span>
-                        <input  class="mb-2" type="text"/><br>
-                        <span>手机号码：</span>
-                        <input  class="mb-2" type="text"/>
+                        <div class="d-flex">
+                            <div class="site">所在地区：</div>
+                            <select class="mb-2" >
+                               <option value="">请选择省</option>
+                               <option value="">北京市</option>
+                               <option value="">天津市</option>
+                               <option value="">河北省</option>
+                               <option value="">山东省</option>
+                               <option value="">江苏省</option>
+                               <option value="">浙江省</option>
+                               <option value="">福建省</option>
+                            </select>
+                        </div>
+                        <div class="d-flex">
+                            <div class="site1">详细地址：</div>
+                            <textarea placeholder="请输入收货详细地址"></textarea>
+                        </div>
+                        <div class="d-flex">
+                            <div class="site2">收货人：</div>
+                            <input  class="mailman mb-2" type="text" placeholder="请输入收货人姓名"/>
+                        </div>
+                        <div class="d-flex">
+                            <div class="site3">手机号码：</div>
+                            <input  class="myphone mb-2" type="text" placeholder="请输入收货人手机号码"/>
+                        </div>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body p-0">
                             <button>保存配送地址</button>     
                         </div>
                 </div>
@@ -163,14 +180,20 @@
                         <button data-dismiss="modal" class="close">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <span>观演人姓名：</span>
-                        <input  class="mb-2" type="text"/><br>
-                        <span>证件类型：</span>
-                        <input  class="mb-2" type="text"/><br>
-                        <span>证件号码：</span>
-                        <input  class="mb-2" type="text"/><br>
+                        <div class="d-flex">
+                            <div class="guan">观演人姓名：</div>
+                            <input  class="mb-2 see1" type="text" placeholder="请输入观演人姓名">
+                        </div>
+                        <div class="d-flex">
+                            <div class="guan">证件类型：</div>
+                            <input  class="mb-2 see1" type="text">
+                        </div>
+                        <div class="d-flex">
+                            <div class="guan">证件号码：</div>
+                            <input  class="mb-2 see1" type="text" placeholder="请输入证件号码">
+                        </div>   
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body d-flex justify-content-center save">
                         <button>保存</button>
                         <button>取消</button>
                     </div>
@@ -228,10 +251,22 @@
 
         </div>
         <div class="sign">
-          <div class="">我已经阅读并同意《大麦网订票服务条款》</div>     
-          <div>同意"票品为不记名凭证，请您妥善保管，遗失不补"</div>     
-          <div>实付款：￥699.00</div> 
-          <button>同意以上协议并提交订单</button> </div>   
+            <div class="d-flex justify-content-end mt-4">
+                <div class="ckb">
+                    <input type="checkbox" >
+                </div>
+                <div class="ckb1">
+                    我已经阅读并同意<a href="" class="danger">《大麦网订票服务条款》</a>
+                </div>
+            </div>     
+            <div>
+                同意"票品为不记名凭证，请您妥善保管，遗失不补"
+            </div>     
+            <div>
+                实付款：￥<span>699.00</span>
+            </div> 
+            <button>同意以上协议并提交订单</button> 
+        </div>   
     </div>
 </div>
 </div>

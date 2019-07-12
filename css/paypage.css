@@ -1,7 +1,7 @@
 .main{
     width: 1200px;height: 1292px;
     margin:0 auto;
-    border:1px solid #ebebeb;
+   
 }
 .main1{width: 1000px;margin:0 auto;} 
 .express{
@@ -35,6 +35,69 @@ p.way{font-size:18px;margin-bottom:30px;}
     position: relative;
     margin-bottom: 14px;
     background: #fcfcfc;}
+
+/* 新增配送地址弹窗 */
+ .modal-content{ width:500px;height:327px;
+margin:0 auto;} 
+.modal-body{margin:20px 0 0; }
+.site{
+    width:72px;height: 24px;
+    font-size:12px;
+    margin:0 5px 0 0;
+}
+select{
+    width:110px;height: 24px;
+    font-size:12px;
+    color:#999;
+}
+.site1{
+    width:72px;height: 36px;
+    font-size:12px;
+    margin:0 5px 0 0;
+}
+textarea{width:278px;height: 34px;}
+.site2{
+    width:72px;height: 26px;
+    font-size:12px;
+    margin:0 5px 0 0;
+}
+.site3{
+    width:72px;height: 26px;
+    font-size:12px;
+    margin:0 5px 0 0;
+}
+.mailman,.myphone{width:278px;height: 24px;}
+.modal-body{margin:0;}
+.modal-body button{
+    width:140px;height: 28px;
+    font-size:14px;
+    background: #ff1268;
+    color:#fff;
+    border-radius:3px;
+    cursor:pointer;
+    margin:0 0 70px 100px;
+    padding-top:0;
+    border:0;
+}
+
+/* 观演人弹窗 */
+.guan{
+    width:72px;height: 26px;
+    font-size:12px;
+    margin:0 5px 0 0;
+    color:#3c3c3c;
+}
+.see1{
+    width: 278px;height: 24px;
+padding:0 8px;}
+.save button{
+   width:75px;height: 28px;
+   margin:0 0 20px 20px;
+   border-radius:3px;
+   border:0;
+}
+
+/* 观演人须知栏 */
 .audience{
     width: 82px;height: 24px;
     font-size:12px;
@@ -45,7 +108,8 @@ p.way{font-size:18px;margin-bottom:30px;}
     border-radius: 4px;
     cursor:pointer;
 }
-.watcher{ width: 1000px;height: 153px; margin:0 auto;
+.watcher{ 
+    width: 1000px;height: 153px; margin:0 auto;
     border-bottom: 1px solid #ebebeb;
     padding: 0 0 20px;
 }
@@ -59,7 +123,7 @@ p.way{font-size:18px;margin-bottom:30px;}
     line-height: 24px;
     margin-top:30px;
     margin-bottom: 30px;}
-    .paypal-img{
+.paypal-img{
         width:241px;height: 76px;
         border: 2px solid #ff1268;
         text-align: center;
@@ -96,7 +160,28 @@ line-height:60px;}
 .bot1,.bot2{height:46px;padding: 16px;background: #f7f7f7;}
 .d-flex img{width:62px;height:80px;}
 
-.sign{text-align:right;}
+.sign{
+    text-align:right;
+    font-size:12px;
+    color:#826666;
+}
+.danger{color: #ff1268;}
+.sign div span{
+    font-size:26px;
+    color:#ff1268;
+}
+.sign button{
+    width:216px;height: 42px;
+    font-size:14px;
+    line-height:18px;
+    background: #ff1268;
+    color: #fff;
+    padding:10px 25px;
+    border-radius:3px;
+    /* outline:0; */
+    border:0;
+    cursor:pointer;
+}
 /* 右部小浮窗 */
 .floatZone{
     width: 82px;height: 143px;

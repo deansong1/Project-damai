@@ -1,0 +1,14 @@
+  /* 顶部 */
+.header{width: 100%;height:90px;border:1px solid #ebebeb;}
+.toper{margin-top:20px;}
+.alipay{width:1200px;margin:0 auto;}  
+.shu{margin:0 10px;} 
+.casher{margin: 20px 0 0;font-size:18px;} 
+  /* 注册栏 */
+.main{
+    width: 1200px;height:1300px;
+    margin:0 auto;
+    border:1px solid #ebebeb;
+    background:#f8f8f8;
+}
+.bigreg{margin:30px 0 0 20px;}
