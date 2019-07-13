@@ -24,25 +24,91 @@
     <div class="alipay">
         <div class="toper d-flex">
             <img src="paypage/T1HHFgXXVeXXXXXXXX.png" alt="">
-            <div class="shu">|</div>
             <div class="casher">我的收银台</div>
         </div>
     </div>
 </div>
 <!--结算栏-->
 <div class="main">
-    <div class="bigreg text-center"> 
-        <div class="d-flex mb-2">
-            <div>正在使用即时到账交易[?]</div>  
-            <div>交易将在14分钟后关闭，请及时付款！</div>
+    <div class="bigreg d-flex mt-4 pl-4">
+        <div>
+            <div class="d-flex mb-2">
+                <div class="mr-3 word">正在使用即时到账交易[?]</div>  
+                <div class="word">交易将在14分钟后关闭，请及时付款！</div>
+            </div>
+            <div class="d-flex">
+                <div class="mr-3">大麦网演出赛事票品</div>  
+                <div class="word mt-1">收款方：北京红马传媒文化发展有限公司</div> 
+            </div>
+        </div> 
+        <div class="price">
+            <strong>709.00</strong>元
+        </div>       
+    </div>
+    <div class="pay1">
+        <div class="details">订单详情</div>
+        <div class="pay d-flex">
+            <div class="left_pay">
+                <div class="inleft text-center">
+                    <div>扫一扫付款（元）</div>
+                    <strong class="in1">709.00</strong>
+                <div class="border1">
+                    <div class="border2">
+                        <div class="ali-icon">
+                            <img src="paypage/下载.png" alt="">
+                            <img src="paypage/扫一扫.png" class="shao" alt="">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <img src="paypage/scan.png"  class="mt-2" alt="">
+                            <div class="text-center pop mt-2">打开手机支付宝<br>扫一扫继续付款</div>
+                        </div>
+                    </div>
+                    
+                </div>   
+                   <div class="mt-3 first">
+                       <a href="">首次使用请下载手机支付宝</a>
+                 </div>
+                    
+                </div>
+                <!-- <div class="pics">
+                        <img src="paypage/T1ASFgXdtnXXXXXXXX.jpg" alt="">
+                    </div> -->
+            </div>
+            <div class="right_pay">
+                <div class="login1">
+                    <div>
+                        <img src="paypage/支付宝pc.png" alt="">
+                    </div>
+                    <button class="login mt-3">登录账户付款</button>
+                </div>
+            </div>
         </div>
-        <div class="d-flex">
-            <div>大麦网演出赛事票品</div>  
-            <div>收款方：北京红马传媒文化...</div> 
-        </div>         
     </div>
 </div>
-
+<!-- <script>
+        //DOM操作4步:
+        //1. 查找触发事件的元素
+        var right_pay=document.getElementsByClassName("right_pay")[0];
+        
+        //2. 绑定事件处理函数
+        right_pay.onclick=function(){
+            //3. 查找要修改的元素
+        var left_pay=document.getElementsByClassName("left_pay")[0];
+        var img=document.querySelectorAll(".right_pay>.login1>img");
+            //4. 修改元
+            //先获得d1完整的计算后的样式:
+            // var style=getComputedStyle("right_pay");
+            //console.log(style);
+            //如果d1.style.display是block
+            if(right_pay.innerHTML=="img"){
+                left_pay.style.width="0px";//就隐藏left_pay
+                right_pay.innerHTML="ff";
+            }else{//否则
+                left_pay.style.width="1000px";
+                right_pay.innerHTML="hh";
+            }
+        }
+        </script> -->
 <!-- 底部 -->
     <footer>
         <iframe class="my-footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
