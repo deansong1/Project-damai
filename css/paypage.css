@@ -182,6 +182,7 @@ line-height:60px;}
     border:0;
     cursor:pointer;
 }
+.sign button a{color: #fff;}
 /* 右部小浮窗 */
 .floatZone{
     width: 82px;height: 143px;
