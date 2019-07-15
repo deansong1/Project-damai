@@ -1,0 +1,147 @@
+/*    登陆栏    */
+.main {
+    width: 100%;
+    height: 600px;
+    background:linear-gradient(to right,#17073d, #17073d, #17073d);
+}
+  
+.bigreg {
+    width: 1150px;
+    height: 600px;
+    margin: 0 auto;
+   }
+.bigreg img{
+    float:left;
+    margin-top:90px; 
+}
+
+.reg-page{
+    width: 350px;
+    height: 340px;
+    float: right;
+    margin: 90px 0 10px;
+    font-size: 14px;
+    background:#fff; }
+
+.nav{background:#e7e7e7;
+    width:100%;}
+.nav-item a{font-size:16px;color:#000;}
+.nav-item a:hover{color:#f00;}
+.nav-item:hover{
+    border-top:2px solid #f00;
+    
+}
+
+/* 密码登录栏 */
+#tab1,#tab2{
+    width:300px;height: 195px;
+    margin:20px 25px 0;
+}
+.adress {
+    width: 300px;
+    height: 42px;
+    background:url(../logReg/mm.png) no-repeat;
+    padding-left: 45px;
+}
+.password{
+    width: 300px;
+    height: 42px;
+    margin: 0 0 16px;
+    padding-left:45px;
+    background:url(../logReg/again.png) no-repeat; 
+}
+
+.password:focus{
+    border: 1px solid #ff3000;
+    outline: none; }
+
+.phone input {
+    width: 300px;
+    height: 42px;
+    margin: 0 0 16px; } 
+                     
+.phone input:focus {
+    border: 1px solid #ff3000;
+    outline: none; }
+  
+.btn-danger {
+    width: 300px;
+    height: 42px;
+    font-size: 20px;
+    background-image: linear-gradient(90deg, #ff4aae, #ff1268);
+    padding: 0 20px; }
+
+.freereg{
+    float:right;
+    margin:10px 0;  
+}
+.freereg a{text-decoration:none;}
+.logo_link{display: flex;}
+
+
+.logo_link div{ 
+    width: 32px;
+    height: 32px;
+    background: url(../logReg/cutelogo.jpg) no-repeat;   
+    background-size: 100px 100px;
+}
+div.m1{background-position:48% 86%;}
+div.m2{background-position:3% 85%;}
+div.m3{background-position:50% 16%;}
+div.m4{background-position:3% 13%;}
+
+/* 短信登录栏 */
+/* .dorpdown{display:inline-block;} */
+.dropdown-toggle {
+    float:left;
+   } 
+input.msg1{
+    width: 300px;
+    height: 42px;
+    background:url(../logReg/cellphone.png) no-repeat;
+    padding-left: 45px;
+}
+
+input.password1{
+    width: 300px;
+    height: 42px;
+    margin: 0 0 16px;
+    background:url(../logReg/123.png) no-repeat; padding-left: 45px;
+}
+
+.msg1:focus,.password1:focus{
+    border: 1px solid #ff3000;
+    outline: none; }
+
+/* 扫码登录栏 */
+.tab-pane{justify-content: center;}
+.text{
+    font-size:16px;
+    font-weight:bold;
+    margin: 8px 0px;
+}
+.codepage{
+          display:flex;flex-direction:column-reverse;
+}
+.xcode{
+    width:130px;
+    height:130px;
+}
+
+.codepage div{
+    font-size:12px;  
+}
+.img1{
+    margin:0 auto;
+}
+.codescan{
+    margin:0 !important;
+    padding-left:100px; 
+}
+.bottom1>div
+{
+/* width:130px; */
+height: 34px;
+padding-right:20px;
+text-align: center;}
+  

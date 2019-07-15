@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>大麦PC注册</title>
-    <link rel="stylesheet" href="../css/bootstrap.css"/>
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../css/regheader.css">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/regheader.css">
     <style>
         /* 顶部 */
         .reg-header{width: 100%;height:90px;}
@@ -30,13 +30,14 @@
         <div class="bigreg text-center"> 
         <div class="reg-bg">
             <div class="reg-page text-muted">
+                <form method="post" action="/user/reg">
                 <div class="phone">
                     *手机号码：
-                    <span><span><input class="phone1" type="text" value="中国大陆 +86"></span></span><input type="text" class="adress" onblur="check_phone()" id="telephone">
+                    <span><span><input class="phone1" type="text" value="中国大陆 +86"></span></span><input type="text" class="adress" onblur="check_phone()" id="telephone" name="phone">
                 </div>
                 <span id="tel_msg" class=""></span>
                 <div>
-                    *登陆密码：<input type="password" class="password" placeholder="设置你的登录密码" onfocus="msg_upwd()" onblur="check_upwd()" id="upwd">
+                    *登陆密码：<input type="password" class="password" placeholder="设置你的登录密码" onfocus="msg_upwd()" onblur="check_upwd()" id="upwd" name="dupwd">
                 </div>
                     <span id="msg1"></span>
                 <div>
@@ -56,6 +57,7 @@
                     和<a href="">《隐私权条款》</a></p>
                 </div>
                 <button class="btn btn-danger mt-3">同意并注册</button>
+            </form>
             </div>
         </div>
     </div>

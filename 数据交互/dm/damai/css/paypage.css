@@ -1,0 +1,228 @@
+.main{
+    width: 1200px;height: 1292px;
+    margin:0 auto;
+   
+}
+.main1{width: 1000px;margin:0 auto;} 
+.express{
+    width:1000px;height: 314px;
+    margin:0 auto;
+    border-bottom:1px solid #ebebeb; 
+}
+p.way{font-size:18px;margin-bottom:30px;}
+.buy{
+    width: 1000px;height: 96px;
+    margin:10px 0 5px;
+} 
+.buy_header{
+    width: 1000px;height: 96px;
+    background: url(../damai/paypage/paylist.png) no-repeat;
+    background-size: 1000px;
+    margin:0 auto;
+} 
+.car11{margin:0 0 16px;}
+.deliver{width: 80px;font-size:14px;text-align: center;}
+.express_icon{
+    width:1000px;height:145px;
+    border-bottom:1px solid #ebebeb;
+    margin:0 0 20px;
+    padding-bottom: 28px;}
+.exp-info{padding: 11px 34px;
+    color: #666;
+    line-height: 16px;
+    font-size: 12px;
+    border: 1px solid #f1f1f1;
+    position: relative;
+    margin-bottom: 14px;
+    background: #fcfcfc;}
+
+/* 新增配送地址弹窗 */
+ .modal-content{ width:500px;height:327px;
+margin:0 auto;} 
+.modal-body{margin:20px 0 0; }
+.site{
+    width:72px;height: 24px;
+    font-size:12px;
+    margin:0 5px 0 0;
+}
+select{
+    width:110px;height: 24px;
+    font-size:12px;
+    color:#999;
+}
+.site1{
+    width:72px;height: 36px;
+    font-size:12px;
+    margin:0 5px 0 0;
+}
+textarea{width:278px;height: 34px;}
+.site2{
+    width:72px;height: 26px;
+    font-size:12px;
+    margin:0 5px 0 0;
+}
+.site3{
+    width:72px;height: 26px;
+    font-size:12px;
+    margin:0 5px 0 0;
+}
+.mailman,.myphone{width:278px;height: 24px;}
+.modal-body{margin:0;}
+.modal-body button{
+    width:140px;height: 28px;
+    font-size:14px;
+    background: #ff1268;
+    color:#fff;
+    border-radius:3px;
+    cursor:pointer;
+    margin:0 0 70px 100px;
+    padding-top:0;
+    border:0;
+}
+
+/* 观演人弹窗 */
+.guan{
+    width:72px;height: 26px;
+    font-size:12px;
+    margin:0 5px 0 0;
+    color:#3c3c3c;
+}
+.see1{
+    width: 278px;height: 24px;
+padding:0 8px;}
+.save button{
+   width:75px;height: 28px;
+   margin:0 0 20px 20px;
+   border-radius:3px;
+   border:0;
+}
+
+/* 观演人须知栏 */
+.audience{
+    width: 82px;height: 24px;
+    font-size:12px;
+    border:1px solid #C4C6CF;
+    background: #F7F8FA;
+    line-height:22px;
+    padding:0 10px;
+    border-radius: 4px;
+    cursor:pointer;
+}
+.watcher{ 
+    width: 1000px;height: 153px; margin:0 auto;
+    border-bottom: 1px solid #ebebeb;
+    padding: 0 0 20px;
+}
+.wat-title{color: #333;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top:30px;
+    margin-bottom: 30px;}
+.paypal{    color: #333;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top:30px;
+    margin-bottom: 30px;}
+.paypal-img{
+        width:241px;height: 76px;
+        border: 2px solid #ff1268;
+        text-align: center;
+        padding:20px 0;
+        cursor:pointer;
+}
+
+/* 确认订单信息栏 */
+.sure-list{
+    width:1000px;height: 264px;
+    margin: 30px 0 0;}
+.makesure{font-size: 18px;margin: 0 0 30px;}
+.sold_add{width:1000px;font-size:12px;}
+.p1{
+    width: 400px;height: 40px;
+}
+.p2{width: 170px;}
+.p3{width: 90px;}
+.p4{width: 90px;}
+.p5{width: 100px;}
+.p6{width: 150px;}
+.p1,.p2,.p3,.p4,.p5,.p6{
+    padding: 12px 16px;height: 40px;
+    background: #ebecf0;
+}
+.wallpaper{width:400px;height:124px;padding: 22px 26px;}
+.ifm{color:#9b9b9b;margin: 0 0 2px;}
+.nosit{width: 170px;height: 60px;
+line-height:60px;}
+
+
+.bot1{width:400px;}
+.bot2{width:599px;}
+.bot1,.bot2{height:46px;padding: 16px;background: #f7f7f7;}
+.d-flex img{width:62px;height:80px;}
+
+.sign{
+    text-align:right;
+    font-size:12px;
+    color:#826666;
+}
+.danger{color: #ff1268;}
+.sign div span{
+    font-size:26px;
+    color:#ff1268;
+}
+.sign button{
+    width:216px;height: 42px;
+    font-size:14px;
+    line-height:18px;
+    background: #ff1268;
+    color: #fff;
+    padding:10px 25px;
+    border-radius:3px;
+    /* outline:0; */
+    border:0;
+    cursor:pointer;
+}
+.sign button a{color: #fff;}
+/* 右部小浮窗 */
+.floatZone{
+    width: 82px;height: 143px;
+    border:1px solid #ebebeb;
+    position:fixed;
+    right: 10px;
+    top: 72.5%;
+
+    margin-top: -105px;
+    background: #fff;
+    }
+.floatZone p{
+    font-size:12px;         
+    margin:5px 0 0;
+    text-align: center;
+}
+.floatZone p:hover{
+    color:#ff1268;
+}
+.item1,.item2,.item3{
+        width:80px;height: 71px;
+        border:1px solid #ebebeb; 
+        cursor:pointer;   
+    }
+.item1 div,.item2 div,.item3 div{
+    width: 32px;height: 29px;
+    margin: 0 24px;
+}
+.item3 p{color:#111;background: #fff;}
+
+.item1 div.sound{
+    background:url(../damai/image/tb1u1u9xmzqk1rjszfhxxb3cpxa-64-180.png) no-repeat -87% 43%;
+    background-size: 35px 101px;
+}
+.item2 div.sound1{
+    background:url(../damai/image/tb1u1u9xmzqk1rjszfhxxb3cpxa-64-180.png) no-repeat -87% -2%;
+    background-size: 32px 101px;
+}
+.item3 div.sound2{
+    background:url(../damai/image/tb1u1u9xmzqk1rjszfhxxb3cpxa-64-180.png) no-repeat -67% 101%;
+    background-size: 35px 101px;
+}
+

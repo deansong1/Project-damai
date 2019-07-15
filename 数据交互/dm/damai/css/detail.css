@@ -1,0 +1,241 @@
+/* 中部内容栏 */
+.detail_index{
+    width: 1202px;
+    height: 5814.5px;
+    border:1px solid #ebebeb;
+    margin: 0 0 64px;  
+}
+.detail_all{width: 880px;height:100%;float: left;}
+.detail_index img{
+    width: 270px;
+    height: 360px;
+    margin:0 0 0 20px;
+}
+
+.detail_left{
+    width: 880px;
+    height: 878.5px;
+    display:flex;
+    padding: 40px 0 60px;
+    border-bottom:1px solid #ebebeb;     
+    border-left:1px solid #ebebeb;
+    border-right:1px solid #ebebeb;       
+}
+
+.detail_text{width:550px;
+            height:778.5px;
+        padding:0 0 0 30px;
+    }
+
+h5{
+    font-size:22px;
+}
+
+.sold{width: 520px;height: 92px;
+    padding: 12px 15px;
+    font-size:12px;
+    background: #f6f6f6;
+}
+.sold span{color:#ff1268;}
+span.so{width: 24px;height: 68px;}
+span.sp1{
+    background: #ff2d79;
+}
+span.sp2{line-height:43px;}
+
+.p1{
+    margin:16px 0;
+    font-size:12px;
+}
+.teller{width:179px;
+height: 43px;
+color:#ff1268;
+background: #ffeaf1;
+outline-color:#ffeaf1;
+cursor:pointer;}
+.teller span{font-size:12px;}
+.teller span{font-size:12px;}
+.sp1{float:left;}
+
+.price{width:473px;
+height:162px;
+flex-wrap: wrap;
+margin: 0 0 0 15px;
+}
+
+.price a{
+    width:131px;height:75px;
+    border:1px solid #ebebeb;
+    color:#000;
+    margin:0 6px 0 0;
+    font-size: 12px;
+    line-height:75px;
+    cursor:pointer;
+}
+.price a:focus{
+    background:#ffeaf1;
+    color:#ff1268;
+}
+
+
+p#explain{
+    font-size:12px;
+    margin:10px 0 0 47px;
+    color: #6c757d;}
+.price1{color:#ff1268;
+    font:21px 微软雅黑;}
+.count,.Sum{
+    margin-bottom:10px;
+    font-size: 12px;
+}
+.Sum{margin-left:15px;}
+
+.tickets{margin-top:28px;}
+.Count{margin-top:33px;}
+.count{height: 40px;
+    margin:0 0 0 15px;}
+
+.sum1{margin-top:33px;}
+/* 右部小浮窗 */
+.floatZone{
+    width: 82px;height: 143px;
+    border:1px solid #ebebeb;
+    position:fixed;
+    right: 10px;
+    top: 72.5%;
+
+    margin-top: -105px;
+    background: #fff;
+    }
+.floatZone p{
+    font-size:12px;         
+    margin:5px 0 0;
+    text-align: center;
+}
+.floatZone p:hover{
+    color:#ff1268;
+}
+.item1,.item2,.item3{
+        width:80px;height: 71px;
+        border:1px solid #ebebeb; 
+        cursor:pointer;   
+    }
+.item1 div,.item2 div,.item3 div{
+    width: 32px;height: 29px;
+    margin: 0 24px;
+}
+.item3 p{color:#111;background: #fff;}
+.item1 div.sound{
+    background:url(../damai/image/tb1u1u9xmzqk1rjszfhxxb3cpxa-64-180.png) no-repeat -87% 43%;
+    background-size: 35px 101px;
+}
+.item2 div.sound1{
+    background:url(../damai/image/tb1u1u9xmzqk1rjszfhxxb3cpxa-64-180.png) no-repeat -87% -2%;
+    background-size: 32px 101px;
+}
+.item3 div.sound2{
+    background:url(../damai/image/tb1u1u9xmzqk1rjszfhxxb3cpxa-64-180.png) no-repeat -67% 101%;
+    background-size: 35px 101px;
+}
+
+
+
+.one{
+    width: 118px;height: 40px;
+    border:1px solid #ebebeb;
+    align-items: center;
+}
+.text-dark{width: 28px;height: 28px;}
+.my_input{width:10%;outline:0;border:0;}
+.limit{line-height: 40px;margin-left:8px; }
+
+.btn{
+    width:210px;height: 40px;
+    background:#ff2d79;
+    margin: 30px 0 0 85px;
+}
+
+.notice_nav{
+    border:1px solid #ebebeb;
+    width:880px;height: 56px;
+    line-height:56px;
+    padding:0 0 0 30px;  
+}
+.notice_nav span{margin:0 60px 0 0;}
+.notice_nav span a{color:#000;}
+.notice_nav span a:focus{font-size: 22px;}
+
+/* 右边内容页 */
+.detail_right{
+    width: 320px;height:5814.5px;
+    padding: 40px 18px 0;
+    float: left;
+}
+.serves{ 
+    width: 283px;height:410px; 
+    border:1px solid #ebebeb;
+    padding: 24px 15px;
+    background: #fafafa;
+}
+.seat{font:14px 微软雅黑;}
+.view{
+    font:12px 微软雅黑;
+    color:#999999;
+    margin:6px 0 0;
+}
+.serves1{margin:0 0 18px;}
+#scancode{width: 251px;height: 91px;background: #fff;}
+#scancode img{width: 90px;height: 90px;float: left;}
+.code_tell{width: 160px;height: 90px;
+border:1px solid #ebebeb;float: left;
+}
+.code_tell span{
+    font:12px 微软雅黑;
+    color:#999;}
+.pls_center{
+            text-align:center;
+            margin-top:20px;
+        }
+
+.right_list{
+    margin:60px 0 0;
+    cursor:pointer;}
+h5{margin:0 0 24px;}
+.list1{margin:0 0 30px;}
+.list1 img{
+    width: 120px;height: 160px;
+    margin:0;
+}
+.list1 div{font-size: 12px;color:#9b9b9b;}
+div.min_price{
+    font-size: 16px;
+    color:#ff1268;
+    margin-top:65px;
+}
+
+.lost{font-size: 14px;color: #4a4a4a;}
+
+/* 演出介绍部分 */
+.notice_content{
+    width: 880px;height: 4878px;
+    border:1px solid #ebebeb;
+    padding: 60px 30px 0;
+}
+.notice_content img{
+    width:600px;height: 460px;
+    margin:0;
+    padding:30px 0;
+}
+h3{
+    font-size:18.72px;
+    font-weight: bold;
+}
+.title1{padding-bottom: 14px;
+    margin-bottom: 23px;
+    font-size: 20px;
+    color: #000;
+    border-bottom: 1px solid #e2e2e2;}
+.s_title{
+    font-size: 13px;color:#999;
+    margin-bottom: 5px;
+}

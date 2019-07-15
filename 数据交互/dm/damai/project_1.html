@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>大麦网</title>
+    <!-- 引入4个文件，必须注意导入顺序-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/navi-list.css"/>
+
+    <style>
+        *{margin:0;padding:0;}
+        .main{width:1200px;margin:0 auto;}
+        .main a:hover{text-decoration: none;}
+        .a1{width:1200px;height:72px;}
+        .a1 a{color:#000;}
+        .a1 img{cursor: pointer;}
+        .b1{width:92px;height: 42px;}
+        .a1 input{  border-top-left-radius: 46px;
+                    border-bottom-left-radius: 46px;
+        }
+        .location{
+            width: 12px;height:14px;
+            margin-right:5px;
+            margin-bottom: 3px;
+        }
+        .angle{width: 9px;height: 5.4px;}
+        .search{width:319px;height: 46px;
+                background:#f8f8f8 url(image/sear.png) no-repeat 5% 50%;
+                background-size:17px 18px;
+                padding-left:50px;
+                border: 1px solid #fff;
+                outline:none;
+                position: relative;
+                border-top-left-radius: 46px;
+                border-bottom-left-radius: 46px;
+        
+        }
+        .search:focus{
+            border: 1px solid #f00;
+        }
+        .click1{
+                    width: 82px;height: 46px;
+                    line-height:46px;
+                    background:#ff1268;
+                    cursor:pointer;
+                    position: absolute;
+                    top:0;
+                    left:319px;
+                    border-radius: 0 27px 27px 0;
+        }
+        .click1 p{
+            color:#fff;
+            text-align: center;
+        }
+
+        .imgs{float: left;list-style:none;}
+        .imgs img{width:26px;height: 26px;  }
+        .c1{color:#000;}
+        .c1:hover{color: #f00;}
+        .ht{padding-right:-15px;padding-left:110px;}
+    /*轮播图*/
+        .carousel{width:1200px;margin-top:-10px;}
+        .carousel-control-prev,.carousel-control-next{
+            width:4.5%;height:20%;
+            top:40%;
+            background:#aaa;
+            border-radius: 0.25rem;
+        }
+        .carousel-indicators li{
+            width:0.8rem;height: 0.8rem;
+            border-radius: 50%;
+            background: #fff;
+            margin-left: 6px;
+            margin-right:6px;
+        }
+        .carousel-indicators .active{
+            background: #004085;
+        }
+    /*演唱会、戏剧音乐、体育*/
+        div.part1{
+            width: 1202px;height:457px;
+            border:1px solid #ebebeb;
+            margin:15px 0;
+        }
+
+        .part1 span{font-size: 24px;}
+        .head-title a{font-size: 14px;margin-right: 20px;}
+        a.tou:hover{
+            color:#f00;
+        }
+        .box img{width: 272px;height: 365.7px;}
+        .box a{color:#000;}
+        .s-box{width: 273px;height: 160px;}
+        .s-box img,.s-box1 img,.s-box2 img{width: 118px;height: 158.94px;}
+        div.adress{margin: 14px 0 0;}
+        div.time{margin: 7px 0 40px 0;}
+        .detail{margin-left:16px;}
+        .detail .title{
+            width:138px;height:40px;
+            font-size: 14px;color:#4a4a4a;
+        }
+        .detail .adress,.detail .time{font-size:12px;color:#9b9b9b;}
+        .cover{position:relative;}
+        .bgimg{
+            width: 272px;height:118px;
+            position:absolute;
+            top: 248px;
+            padding: 20px 10px;
+            background-color: rgba(0,0,0,.4);
+        }
+        .topic:hover,.price:hover{color:#f00;}
+        .price{font-size: 20px;}
+        .box div{color:#fff;}
+    /* 底部 */
+        .my-footer{ width:100%;height:340px;}
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="row a1 mt-3 ml-1">
+        <a class="col-1">
+            <img class="b1" src="image/toplogo.png" alt=""/>
+        </a>
+        <div class="col-1 ml-5 mt-2">
+            <img src="image/location.png" class="location"/><a href="">全国</a>
+            <img src="image/angle.png" class="angle"/>
+        </div>
+        <div  class="col-1 mt-2 pr-2" >
+            <a  href="">首页</a>
+            <a href="" class="ml-2">分类</a>
+        </div>
+        <div class="col-4 ml-5 p-0">
+            <input type="text" class="search" placeholder="搜索明星、演出和体育赛事"/>
+            <div class="click1"><p>搜索</p></div>
+        </div>
+        <div class="col-4 p-0">
+        <ul class="ht mt-2 ml-4">
+            <li class="imgs ml-3">
+                <img src="image/login_icon.png" alt=""/>
+                <a class="c1" href="http://127.0.0.1:5502/damai/project_1login.html" target="_blank">登录</a>
+            </li>
+            <li class="imgs ml-3">
+                <img src="image/download_icon.png" alt=""/>
+                <a class="c1" href="">下载</a>
+            </li>
+            <li class="imgs ml-3">
+                <img src="image/english.png" alt=""/>
+                <a class="c1" href="">English</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    <!-- 轮播图片-->
+    <div  id="pic" class="carousel" data-ride="carousel">
+       <div class="carousel-inner">
+           <div class="carousel-item active">
+               <img class="w-100" src="image/lunbo1.jpg" alt=""/>
+           </div>
+           <div class="carousel-item">
+               <img class="w-100" src="image/lunbo2.jpg" alt=""/>
+           </div>
+           <div class="carousel-item">
+               <img class="w-100" src="image/lunbo3.jpg" alt=""/>
+           </div>
+           <div class="carousel-item">
+               <img class="w-100" src="image/lunbo4.jpg" alt=""/>
+           </div>
+           <div class="carousel-item">
+               <img class="w-100" src="image/lunbo5.jpg" alt=""/>
+           </div>
+       </div>
+        <!-- 左右箭头-->
+        <a data-slide="prev" href="#pic" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a data-slide="next" href="#pic" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <!-- 轮播指示器-->
+        <ul class="carousel-indicators">
+            <li data-target="#pic" data-slide-to="0" class="active"></li>
+            <li data-target="#pic" data-slide-to="1"></li>
+            <li data-target="#pic" data-slide-to="2"></li>
+            <li data-target="#pic" data-slide-to="3"></li>
+            <li data-target="#pic" data-slide-to="4"></li>
+        </ul>
+    </div>
+<!--图形导航栏-->
+    <div class="thr d-flex justify-content-around">
+        <a href="">
+            <div class="sprite1"></div>
+            <p>演唱会</p>
+        </a>
+        <a href="">
+            <div class="sprite2"></div>
+            <p>话剧歌剧</p>
+        </a>
+        <a href="">
+            <div class="sprite3"></div>
+            <p>体育</p>
+        </a>
+        <a href="">
+            <div class="sprite4"></div>
+            <p>儿童亲子</p>
+        </a>
+        <a href="">
+            <div class="sprite5"></div>
+            <p>二次元</p>
+        </a>
+        <a href="">
+            <div class="sprite6"></div>
+            <p>展览休闲</p>
+        </a>
+        <a href="">
+            <div class="sprite7"></div>
+            <p>曲苑杂坛</p>
+        </a>
+        <a href="">
+            <div class="sprite8"></div>
+            <p>舞蹈芭蕾</p>
+        </a>
+    </div>
+    <!-- 演唱会专栏-->
+        <div class="part1 p-3">
+            <div class="head-title">
+                <span>演唱会</span>
+                <a href="" class="tou mt-2 text-muted float-right ml-2">查看全部</a>
+            </div>
+            <div class="box d-flex mt-3">
+                <a class="cover" href="http://127.0.0.1:5502/damai/detail.html" target="_blank">
+                    <img src="image/chenqizen.jpg" alt=""/>
+                    <div class="bgimg">
+                        <div class="topic">陈绮贞20周年演唱会【漫漫长夜cheer20】-杭州站</div>
+                        <div class="price mt-2">￥399起</div>
+                    </div>
+                </a>
+             <div class="d-flex ml-4">
+                <div class="s-box">
+                    <a href="" class="d-flex justify-content-around">
+                        <div class="mb-5">
+                            <img src="image/show1.jpg" alt=""/>
+                        </div>
+                        <div class="detail mb-5">
+                            <div class="title">Beam!Beam！Pro音乐节杭州站</div>
+                            <div class="adress">MAOLivehouse杭州</div>
+                            <div class="time">2019.06.29 周六 16:00</div>
+                            <div>￥200起</div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex">
+                        <div>
+                            <img src="image/show2.jpg" alt=""/>
+                        </div>
+                        <div class="detail">
+                            <div class="title">徐真真“如果爱 请渣爱” 2019盛夏巡演</div>
+                            <div class="adress">MAOLivehouse杭州</div>
+                            <div class="time">2019.07.07 周日 20:30</div>
+                            <div>￥120起</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="s-box1 ml-4">
+                    <a href="" class="d-flex">
+                        <div class="mb-5">
+                            <img src="image/show3.jpg" alt=""/>
+                        </div>
+                        <div class="detail mb-5">
+                            <div class="title">谭咏麟银河岁月<br/>中国巡回演唱会</div>
+                            <div class="adress">黄龙体育中心(体育场)</div>
+                            <div class="time">2019.08.03 周六</div>
+                            <div>￥280起</div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex">
+                        <div><img src="image/show4.gif" alt=""/></div>
+                        <div class="detail">
+                            <div class="title">《BACK TO WILD》<br/>“嘻哈音乐节”杭州站</div>
+                            <div class="adress">MAOLivehouse杭州</div>
+                            <div class="time">2019.07.29 周六 20:00</div>
+                            <div>￥200起</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="s-box2 ml-4">
+                    <a href="" class="d-flex">
+                        <div class="mb-5"><img src="image/show5.jpg" alt=""/></div>
+                    <div class="detail mb-5">
+                        <div class="title">4 yen china tour 2019<br/>"color"</div>
+                        <div class="adress">MAOLivehouse杭州</div>
+                        <div class="time">2019.08.07 周三 20:00</div>
+                        <div>￥200起</div>
+                    </div>
+                    </a>
+                    <a href="" class="d-flex">
+                        <div><img src="image/show6.jpg" alt=""/></div>
+                        <div class="detail">
+                            <div class="title">「嗨！我们是寻人启事」2019 巡演 杭州站</div>
+                            <div class="adress">MAOLivehouse杭州</div>
+                            <div class="time">2019.07.25 周四 20:00</div>
+                            <div>￥200起</div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    <!-- 话剧歌剧专栏-->
+    <div class="part1 p-3">
+        <div class="head-title">
+            <span>话剧歌剧</span>
+            <a href="" class=" mt-2 text-muted float-right">查看全部</a>
+        </div>
+        <div class="box d-flex mt-3">
+            <a class="cover" href="">
+                <img src="Opera/sun.jpg" alt=""/>
+                <div class="bgimg">
+                    <div class="topic">太阳马戏《X 绮幻之境》 </div>
+                    <div class="price mt-2">￥360起</div>
+                </div>
+            </a>
+            <div class="d-flex ml-4">
+                <div class="s-box">
+                    <a href="" class="d-flex justify-content-around">
+                        <div class="mb-5">
+                            <img src="Opera/king.jpg" alt=""/>
+                        </div>
+                        <div class="detail mb-5">
+                            <div class="title">开心麻花舞台剧<br/>《皇帝的新娘》</div>
+                            <div class="adress">浙江胜利剧院</div>
+                            <div class="time">2019.07.24-07.28</div>
+                            <div>￥200起</div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex">
+                        <div>
+                            <img src="Opera/the%20light%20or%20dark.jpg" alt=""/>
+                        </div>
+                        <div class="detail">
+                            <div class="title">中文原创音乐剧《白夜行》韩雪</div>
+                            <div class="adress">杭州大剧院（歌剧院）</div>
+                            <div class="time">2019.08.31-08.31</div>
+                            <div>￥120起</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="s-box1 ml-4">
+                    <a href="" class="d-flex">
+                        <div class="mb-5">
+                            <img src="Opera/music.jpg" alt=""/>
+                        </div>
+                        <div class="detail mb-5">
+                            <div class="title">音乐剧史诗巨制《贝隆夫人》</div>
+                            <div class="adress">杭州大剧院（歌剧院）</div>
+                            <div class="time">2019.11.13-11.16</div>
+                            <div>￥180起</div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex">
+                            <div><img src="Opera/the%20revange.jpg" alt=""/></div>
+                        <div class="detail">
+                            <div class="title">开心麻花舞台剧<br/>《乌龙山伯爵》</div>
+                            <div class="adress">浙话艺术剧院</div>
+                            <div class="time">2019.07.05-07.14</div>
+                            <div>￥50起</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="s-box2 ml-4">
+                    <a href="" class="d-flex">
+                        <div class="mb-5"><img src="Opera/hangzhou.jpg" alt=""/></div>
+                        <div class="detail mb-5">
+                            <div class="title">《印象西湖，最忆是杭州》</div>
+                            <div class="adress">MAOLivehouse杭州</div>
+                            <div class="time">2019.06.26-06.30</div>
+                            <div>￥110起</div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex">
+                        <div><img src="Opera/carmon.jpg" alt=""/></div>
+                        <div class="detail">
+                            <div class="title">开心麻花舞台剧《旋转卡门》</div>
+                            <div class="adress">杭州胜利剧院</div>
+                            <div class="time">2019.08.07-08.11</div>
+                            <div>￥100起</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 体育专栏-->
+    <div class="part1 p-3">
+        <div class="head-title">
+            <span>体育比赛</span>
+            <a href="" class=" mt-2 text-muted float-right">查看全部</a>
+        </div>
+        <div class="box d-flex mt-3">
+            <a class="cover" href="">
+                <img src="sport/dota2.jpg" alt=""/>
+                <div class="bgimg">
+                    <div class="topic">2019 DOTA2 国际邀请赛 </div>
+                    <div class="price mt-2">￥499起</div>
+                </div>
+            </a>
+            <div class="d-flex ml-4">
+                <div class="s-box">
+                    <a href="" class="d-flex justify-content-around">
+                        <div class="mb-5">
+                            <img src="sport/asiacup.jpg" alt=""/>
+                        </div>
+                        <div class="detail mb-5">
+                            <div class="title">2019年英超亚洲杯（南京站）</div>
+                            <div class="adress">南京奥体中心体育场</div>
+                            <div class="time">2019.07.17 周三 18:00</div>
+                            <div>￥200起</div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex">
+                        <div>
+                            <img src="sport/inter-shanghai.jpg" alt=""/>
+                        </div>
+                        <div class="detail">
+                            <div class="title">2019国际冠军杯上海站由友邦保险呈现</div>
+                            <div class="adress">上海虹口足球场</div>
+                            <div class="time">2019.07.25</div>
+                            <div>￥120起</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="s-box1 ml-4">
+                    <a href="" class="d-flex">
+                        <div class="mb-5">
+                            <img src="sport/shanghai.jpg" alt=""/>
+                        </div>
+                        <div class="detail mb-5">
+                            <div class="title">彩虹泡泡跑上海站</div>
+                            <div class="adress">上海大宁郁金香公园</div>
+                            <div class="time">2019.07.07 周日 20:30</div>
+                            <div>￥280起</div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex">
+                        <div><img src="sport/greentown.jpg" alt=""/></div>
+                        <div class="detail">
+                            <div class="title">2019中国足协甲级联赛浙江绿城主场赛事</div>
+                            <div class="adress">黄龙体育中心（体育场）</div>
+                            <div class="time">2019.07.29</div>
+                            <div>￥200起</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="s-box2 ml-4">
+                    <a href="" class="d-flex">
+                        <div class="mb-5"><img src="sport/greentown.jpg" alt=""/></div>
+                        <div class="detail mb-5">
+                            <div class="title">2019中国足协甲级联赛浙江绿城全年套票</div>
+                            <div class="adress">黄龙体育中心（体育场）</div>
+                            <div class="time">2019.08.07</div>
+                            <div>￥200起</div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex">
+                        <div><img src="sport/zhejiang.jpg" alt=""/></div>
+                        <div class="detail">
+                            <div class="title">2019中乙联赛预赛循环赛阶段赛</div>
+                            <div class="adress">绍兴中国轻纺城体育中心</div>
+                            <div class="time">2019赛季</div>
+                            <div>￥200起</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer>
+    <iframe class="my-footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
+</footer>
+</body>
+</html>

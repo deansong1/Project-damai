@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>大麦PC登录</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/loginheader.css">
+    <style>
+        /* 顶部 */
+        .reg-header{width: 100%;height:90px;}
+
+        /*登录栏 */
+       
+        /* 底部 */
+        .my-footer{ 
+            width:100%;height:310px;
+            margin-top:20px;}
+    </style>
+</head>
+<body>
+    <header>
+            <iframe class="reg-header" src="regheader.html" frameborder="0" scrolling="no"></iframe>
+    </header>
+<!-- 登录栏 -->
+    <div class="main">
+        <div class="bigreg text-center"> 
+            <img src="logreg/logpic.png" alt="">
+    <!-- 选项卡栏 -->
+            <div class="reg-page text-muted">
+                    <ul  class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a data-toggle="tab" class="nav-link active" href="#tab1">密码登录</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="tab" class="nav-link" href="#tab2">短信登录</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="tab" class="nav-link" href="#tab3">扫码登录</a>
+                            </li>
+                    </ul>
+        <!-- 密码登录栏内容 -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+        <form method="post" action="/user/login">
+                <div class="phone">
+                   <input type="text" class="adress" placeholder="请输入手机号或邮箱" name="phone">
+                </div>
+                <div>
+                    <input type="password" class="password" placeholder="请输入登录密码" onfocus="msg_upwd()" onblur="check_upwd()" id="upwd" name="dupwd">
+                </div>
+                <button class="btn btn-danger">
+                    登录
+                </button>
+            <div class="logo_link mt-3 ml-1">
+                <a href="">
+                    <div class="m1"></div>
+                    </a>   
+                <a href="">
+                    <div class="m2"></div>
+                    </a>   
+                <a href="">
+                    <div class="m3"></div>
+                    </a>   
+                <a href="">
+                    <div class="m4"></div>
+                    </a>   
+            </div>
+                <div class="freereg">
+                    <a href="">忘记密码</a>
+                    <a href="http://127.0.0.1:5502/%E6%95%B0%E6%8D%AE%E4%BA%A4%E4%BA%92/dm/damai/project_1reg.html" target="_blank">免费注册</a>
+                </div>
+            </div> 
+        </form>
+        <!-- 短信登录栏 -->
+                <div class="tab-pane" id="tab2"> 
+                    <div class="dropdown mb-3">
+                        <button class="dropdown-toggle" data-toggle="dropdown">
+                        +86   
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="">中国大陆 +86</a></li>
+                            <li><a href="">中国香港 +852</a></li>
+                            <li><a href="">中国台湾 +886</a></li>
+                            <li><a href="">中国澳门 +853</a></li>
+                        </ul>
+                       <input type="text" class="msg1" placeholder="请输入手机号">
+                    </div>
+                    <div>
+                        <input type="password" class="password1" placeholder="请输入验证码">
+                    </div>
+                    <button class="btn btn-danger">
+                        登录
+                    </button>
+                </div>  
+        <!-- 扫码登录 --> 
+                <div class="tab-pane" id="tab3"> 
+                    <div>
+                        <div class="text text-center">
+                           请升级至大麦最新版本
+                        </div>
+                    <div class="codepage">
+                        <div class="img1">
+                            <img class="xcode m-0" src="logReg/damaicode.png" alt="">
+                        </div>   
+                        <div class="botom1 mb-2">
+                    <img src="logReg/scan.png" class="codescan ">
+                        <div>
+        <p class="text-center">
+                打开<a href="">大麦手机客户端</a><br>扫一扫登录</p>
+                        </div>    
+                        </div>
+                      </div>
+                    </div>
+                </div>   
+            </div>    
+        </div>   
+    </div>
+</div>
+    
+    <footer>
+        <iframe class="my-footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
+    </footer>
+</body>
+</html>

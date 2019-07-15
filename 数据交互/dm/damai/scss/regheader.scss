@@ -1,0 +1,87 @@
+/* 中部注册面 */
+.main{width: 100%;height: 583px;
+    background:#f8f8f8;
+    padding-top: 40px;
+}
+.bigreg{
+    width: 1200px;height:540px;
+    margin: 0 auto;
+    background:#fff;
+    padding-top:40px;
+    
+}
+.reg-bg{width: 1200px;height: 339px;}
+.reg-page{
+        width: 720px;height: 339px;
+        margin: 0 auto;
+        font-size:14px;
+}
+.around{ 
+    background:#ccc;
+
+}
+.position{
+    width:40px;height:40px;
+    border: 1px solid #d7d8d9;
+    box-shadow: 2px 0 6px 0 rgba(0,0,0,.1);
+    background: #fff;
+    box-sizing: border-box;
+    position:absolute;
+    cursor:move;
+   
+    font-size: 16px;
+    font-style: normal;
+}
+
+.s-around{
+    width: 298px;height: 40px;
+    line-height: 40px;
+    font-size:12px;
+    
+}
+.d1{
+    display:flex;
+    margin-left: 30px;
+}
+.d1 p{margin: 0;}
+.d1 p a{text-decoration:none;}
+
+.password,.repassword{
+    width:298px;height:38px;
+    margin: 0 0 16px;
+    padding: 0 12px;
+}
+.password:focus,.repassword:focus{
+    border:1px solid #ff3000;
+    outline:none;
+}
+.push{margin-right: 15px;}
+.adress{
+    width: 145px;height: 38px;   
+}
+.phone1{
+    width: 145px;height: 38px;
+    padding: 0;
+    
+}  
+.phone input{width: 148px;height: 38px;
+    margin:0 0 16px;        
+}
+.phone input:focus{
+    border:1px solid #ff3000;
+    outline:none;
+}
+// 注册内容栏
+// .password{border-radius: 3px;}
+// .repassword{border-radius: 3px;}
+.btn-danger{
+    width: 150px;height: 40px;
+    background-image: linear-gradient(90deg,#ff4aae,#ff1268);
+    padding: 0 20px;
+}
+.cube{
+    width: 16px;height: 16px;
+}
+
+
+
