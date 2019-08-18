@@ -16,6 +16,8 @@
     background:#f8f8f8;
 }
 .bigreg{width:1200px;margin:0 auto;}
+ul.expand{list-style: none;}
+.payer{display:none;}
 /* 交易信息详情栏 */
 .price{
   margin-left:600px;font-size:22px;
@@ -42,6 +44,7 @@ strong{color: #f60;}
   background: gray;
   color:#fff;
   margin:10px 0 0 20px;
+  cursor: pointer;
 }
 /* 左付款区 */
 .left_pay{
@@ -49,7 +52,12 @@ strong{color: #f60;}
   border:1px solid #ebebeb;
   overflow:hidden;
   transition:all .5s linear;
-  background: #fff url(../damai/paypage/T1ASFgXdtnXXXXXXXX.jpg) no-repeat 80% 20%;
+  position: relative;
+}
+.pay_way{
+  position: absolute;
+  top:80px;
+  left:650px;
 }
 .inleft{width:270px;height:300px;margin: 100px 364px;}
 .ali-icon{width:168px; height:168px;

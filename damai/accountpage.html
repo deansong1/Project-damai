@@ -36,10 +36,19 @@
                 <div class="mr-3 word">正在使用即时到账交易[?]</div>  
                 <div class="word">交易将在14分钟后关闭，请及时付款！</div>
             </div>
-            <div class="d-flex">
-                <div class="mr-3">大麦网演出赛事票品</div>  
-                <div class="word mt-1">收款方：北京红马传媒文化发展有限公司</div> 
-            </div>
+            <ul class="d-flex expand">
+                <li class="mr-3">大麦网演出赛事票品</li>  
+                <li class="word mt-1">
+                   <div>收款方：北京红马传媒文化...</div>
+                <div class="payer"> 
+                   <div>收款方：北京红马传媒文化...</div> 
+                   <div>收款方：北京红马传媒文化...</div> 
+                   <div>收款方：北京红马传媒文化...</div> 
+                   <div>收款方：北京红马传媒文化...</div>
+                </div> 
+                </li> 
+               
+            </ul>
         </div> 
         <div class="price">
             <strong>709.00</strong>元
@@ -70,10 +79,9 @@
                  </div>
                     
                 </div>
-                <!-- <div class="pics">
-                        <img src="paypage/T1ASFgXdtnXXXXXXXX.jpg" alt="">
-                    </div> 
-                -->
+                <div class="pay_way">
+                    <img src="paypage/1.png" alt="1">
+                </div>
             </div>
             <div class="right_pay">
                 <div class="login1">
@@ -86,30 +94,63 @@
         </div>
     </div>
 </div>
-<!-- <script>
-        //DOM操作4步:
-        //1. 查找触发事件的元素
-        var right_pay=document.getElementsByClassName("right_pay")[0];
+<script src="../js/jquery-1.11.3.js"></script>
+
+<script>
+  $("div.details").click(function(){
+      var $det=$(this);
+      if($det.html()==="订单详情"){
+    $("ul.expand>li>div:gt(0)").toggle();
+  }
+})
+</script>
+// <!-- <script>
+//         //DOM操作4步:
+//         //1. 查找触发事件的元素
+//         var right_pay=document.getElementsByClassName("right_pay")[0];
         
-        //2. 绑定事件处理函数
-        right_pay.onclick=function(){
-            //3. 查找要修改的元素
-        var left_pay=document.getElementsByClassName("left_pay")[0];
-        var img=document.querySelectorAll(".right_pay>.login1>img");
-            //4. 修改元
-            //先获得d1完整的计算后的样式:
-            // var style=getComputedStyle("right_pay");
-            //console.log(style);
-            //如果d1.style.display是block
-            if(right_pay.innerHTML=="img"){
-                left_pay.style.width="0px";//就隐藏left_pay
-                right_pay.innerHTML="ff";
-            }else{//否则
-                left_pay.style.width="1000px";
-                right_pay.innerHTML="hh";
-            }
-        }
-        </script> -->
+//         //2. 绑定事件处理函数
+//         right_pay.onclick=function(){
+//             //3. 查找要修改的元素
+//         var left_pay=document.getElementsByClassName("left_pay")[0];
+//         var img=document.querySelectorAll(".right_pay>.login1>img");
+//             //4. 修改元
+//             //先获得d1完整的计算后的样式:
+//             // var style=getComputedStyle("right_pay");
+//             //console.log(style);
+//             //如果d1.style.display是block
+//             if(right_pay.innerHTML=="img"){
+//                 left_pay.style.width="0px";//就隐藏left_pay
+//                 right_pay.innerHTML="ff";
+//             }else{//否则
+//                 left_pay.style.width="1000px";
+//                 right_pay.innerHTML="hh";
+//             }
+//         }
+//         </script> -->
+
+        <script>
+        //1.查找触发事件的元素
+		 var $img=$(".pay_way>img");
+		//2.绑定事件处理函数
+		$img.click(function() {
+			//3.查找要修改的元素
+			var $img=$(this);
+			//4.修改元素
+			//先获得当前img上的alt属性上缓存的序号
+			var i=parseInt($img.attr("alt"))
+			i<2?i++:(i=1);
+			//图片的src变为第i张图片
+			//同时图片的alt也要变成对应新序号i
+			$img 
+			.attr({
+				src:`paypage/${i}.png`,
+				alt:i
+			})
+		})
+        </script>
+
+
 <!-- 底部 -->
     <footer>
         <iframe class="my-footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
