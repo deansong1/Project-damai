@@ -149,24 +149,61 @@
                 <div class="tickets d-flex">
                     <div>票档</div>
                     <div class="price d-flex text-center">
-                        <a href="">399(看台)</a>
-                        <a href="">499(看台)</a>
-                        <a href="">699(看台)</a>
-                        <a href="">799(内场)</a>
-                        <a href="">1199(内场)</a>
+                        <a href="javascript:;">399(看台)</a>
+                        <a href="javascript:;">499(看台)</a>
+                        <a href="javascript:;">699(看台)</a>
+                        <a href="javascript:;">799(内场)</a>
+                        <a href="javascript:;">1199(内场)</a>
                     </div>
                 </div>
+                <script>
+                    var $red=$(".price a");
+                    $red.click(function(){
+                        if ($red.css({"background":"#fff","color":"#000"})){
+                            $(this).css({
+                                "background":"#ffeaf1",
+                                "color":"red"    
+                        })
+                        }
+                        
+                    })
+                </script>
                     <div class="Count d-flex">
                         <div>数量</div>
                         <div class="count text-muted d-flex">
                             <div class="one d-flex justify-content-around">
-                                <button class="text-dark  font-weight-bold border-0 px-2">-</button>
+                                <button class="text-dark  font-weight-bold border-0 px-2 " id="but1">-</button>
                                 <input class="text-center my_input" type="text" value="1">
-                                <button class="text-dark  font-weight-bold border-0 px-2">+</button>
+                                <button class="text-dark  font-weight-bold border-0 px-2 " id="but2">+</button>
                             </div>
                             <span class="limit">每笔订单限购6张</span>
                         </div>
                     </div>
+                    
+                 <script>
+                    var btns=$(".one>button")   
+                    var n = $(".my_input").val();
+                    btns.each(function(){
+                        $(this).click(function(){
+                            var str = $(this).attr("id");
+                            if(str.indexOf("but2")!=-1&&n<6){
+                                n++;
+                            }else if(n>1){
+                                n--;
+                            }
+                            $(".my_input").val(n);
+                            // var h=parseFloat($("span.price1").html().slice(1));
+                           
+                            var h=699;
+                            var f=$(".my_input").val();
+                            var to=h*f;                                        
+                            $("span.price1").html(`￥${to.toFixed(2)}`);
+                            
+                        });
+                    });
+
+                 </script>   
+
                     <p id="explain">按付款顺序配票，优先连座配票</p>
                     <div class="sum1 d-flex">
                         <div>合计</div>
@@ -178,11 +215,48 @@
                     <div class="btn"><a href="http://127.0.0.1:5502/damai/paypage.html" target="_blank" class="text-white">立即预定</a></div>
                 </div>
             </div>
+            <div class="notice_nav1">
+                    <span><a href="#protect">项目详情</a></span>
+                    <span><a href="#noticed">购票须知</a></span>
+                    <span><a href="#watch">观影需知</a></span>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $(window).on('scroll',function(){
+                        var b=$(window).scrollTop();//获取滚动的高度
+                        console.log(b);
+                        var a=$(".notice_nav").offset().top;//获取元素距离顶部的距离
+                        console.log(a);
+                        if(b>a){
+                                $(".notice_nav1").show()
+                            }
+                            else if(b<a){
+                                $(".notice_nav1").hide()
+                            }
+                    });
+                });
+                /*字体样式变化*/ 
+                var $navi1=$(".notice_nav1 a");
+                $navi1.click(function(){
+                    if ($navi1.css("font-size","16px")){
+                         $(this).css("font-size","23px")
+                    }
+                })
+            </script>
             <div class="notice_nav">
                 <span><a href="#protect">项目详情</a></span>
                 <span><a href="#noticed">购票须知</a></span>
                 <span><a href="#watch">观影需知</a></span>
             </div>
+            
+            <script>
+                $navi=$(".notice_nav a");
+                $navi.click(function(){
+                    if ($navi.css("font-size","16px")){
+                         $(this).css("font-size","23px");
+                    }
+                })
+            </script>
 <!-- 演出介绍内容 -->
             <div class="notice_content">
                 <div class="title1" id="protect">演出介绍</div>

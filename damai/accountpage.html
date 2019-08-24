@@ -41,8 +41,7 @@
                 <li class="word mt-1">
                    <div>收款方：北京红马传媒文化...</div>
                 <div class="payer"> 
-                   <div>收款方：北京红马传媒文化...</div> 
-                   <div>收款方：北京红马传媒文化...</div> 
+                   <div>收款额：799.00元</div> 
                    <div>收款方：北京红马传媒文化...</div> 
                    <div>收款方：北京红马传媒文化...</div>
                 </div> 
@@ -83,6 +82,7 @@
                     <img src="paypage/1.png" alt="1">
                 </div>
             </div>
+
             <div class="right_pay">
                 <div class="login1">
                     <div>
@@ -91,10 +91,29 @@
                     <button class="login mt-3">登录账户付款</button>
                 </div>
             </div>
+            <div class="login_area">
+                    <div class="tab-pane active" id="tab1"> 
+                            <div class="phone">
+                            用户名：<input type="text" class="adress mt-4" placeholder="请输入手机号或邮箱">
+                            </div>
+                            <div>
+                                密码：<input type="password" class="password mt-3 ml-3" placeholder="请输入登录密码" onfocus="msg_upwd()" onblur="check_upwd()" id="upwd">
+                            </div>
+                            <button class="btn btn-danger">
+                                登录
+                            </button>
+            </div>
         </div>
     </div>
+    <script>
+        $(".login").on("click",function(){
+            var left_pay=$(".left_pay");
+                left_pay.toggle();
+            $(".login_area").toggle();
+        })
+    </script>
 </div>
-<script src="../js/jquery-1.11.3.js"></script>
+<!-- <script src="../js/jquery-1.11.3.js"></script> -->
 
 <script>
   $("div.details").click(function(){
@@ -104,7 +123,7 @@
   }
 })
 </script>
-// <!-- <script>
+ <!-- <script>
 //         //DOM操作4步:
 //         //1. 查找触发事件的元素
 //         var right_pay=document.getElementsByClassName("right_pay")[0];

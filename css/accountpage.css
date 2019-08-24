@@ -53,6 +53,7 @@ strong{color: #f60;}
   overflow:hidden;
   transition:all .5s linear;
   position: relative;
+  background: #fff;
 }
 .pay_way{
   position: absolute;
@@ -101,4 +102,19 @@ strong.in1{font-size:20px; color: #f60;}
   color: #fff;
   font-size: 12px;
   cursor:pointer;
+}
+/* 登录账户付款 */
+.login_area{
+  display: none;
+  width: 1002px;
+  height: 592px;
+}
+#tab1{
+  width:300px;
+  height:200px;
+  margin: 200px 350px;
+}
+.btn{
+  width: 174px;
+  margin:30px 65px;
 }

@@ -42,31 +42,54 @@
                                 <a data-toggle="tab" class="nav-link" href="#tab3">扫码登录</a>
                             </li>
                     </ul>
+                              
         <!-- 密码登录栏内容 -->
         <div class="tab-content">
             <div class="tab-pane active" id="tab1"> 
                 <div class="phone">
                    <input type="text" class="adress" placeholder="请输入手机号或邮箱">
+                   <span></span>
                 </div>
                 <div>
                     <input type="password" class="password" placeholder="请输入登录密码" onfocus="msg_upwd()" onblur="check_upwd()" id="upwd">
+                    <span class="test"></span>
                 </div>
                 <button class="btn btn-danger">
                     登录
                 </button>
+            <script>
+                var $txtUser=$("input:text");
+                var $txtPwd=$("input:password");
+               
+                function vali($txt,minlen,maxlen){
+                    var $span=$txt.next();
+                    if($txt.val().length>=minlen&&$txt.val().length<=maxlen){
+                        $span.html("<img src='logReg/ok.png'>");
+                    }else{
+                        $span.html("<img src='logReg/err.png'>");
+                    }
+                }
+                $txtUser.blur(function(){
+                    vali($(this),3,9)
+                })
+                $txtPwd.blur(function(){
+                    vali($(this),6,8)
+                })
+
+            </script> 
             <div class="logo_link mt-3 ml-1">
                 <a href="">
                     <div class="m1"></div>
-                    </a>   
+                </a>   
                 <a href="">
                     <div class="m2"></div>
-                    </a>   
+                </a>   
                 <a href="">
                     <div class="m3"></div>
-                    </a>   
+                </a>   
                 <a href="">
                     <div class="m4"></div>
-                    </a>   
+                </a>   
             </div>
                 <div class="freereg">
                     <a href="">忘记密码</a>
@@ -85,7 +108,8 @@
                             <li><a href="">中国台湾 +886</a></li>
                             <li><a href="">中国澳门 +853</a></li>
                         </ul>
-                       <input type="text" class="msg1" placeholder="请输入手机号">
+                       <input type="phone" class="msg1" placeholder="请输入手机号">
+                       <span></span>
                     </div>
                     <div>
                         <input type="password" class="password1" placeholder="请输入验证码">
@@ -105,9 +129,9 @@
                             <img class="xcode m-0" src="../damai/logReg/damaicode.png" alt="">
                         </div>   
                         <div class="botom1 mb-2">
-            <img src="../damai/logReg/scan.png" class="codescan ">
+            <img src="../damai/logReg/scan.png" class="codescan">
                         <div>
-        <p class="text-center">
+            <p class="text-center">
                 打开<a href="">大麦手机客户端</a><br>扫一扫登录</p>
                         </div>    
                         </div>

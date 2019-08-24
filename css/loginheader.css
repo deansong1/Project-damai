@@ -63,6 +63,11 @@
 .phone input:focus {
     border: 1px solid #ff3000;
     outline: none; }
+
+.phone span img{
+    margin:0; }
+.bigreg img{
+    margin:0; }
   
 .btn-danger {
     width: 300px;
